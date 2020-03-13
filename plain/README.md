@@ -11,4 +11,15 @@ A simple black, grey, and white minimalist template for portforlio.
 - 0 Dependencies
 - Compatible with any web server
 
-## Download the Code
+## How to use
+
+1. Close or manually download the code.
+2. Under the "plain" folder, edit the file `config.js`.
+3. Open the `index.html` file in your browser.
+4. If everything looks good, upload it to your server.
+
+## I am not a web developer, how do I setup my portfolio website?
+
+> Need help with setting up your portfolio website?
+
+Contact me @ jofftiquez@gmail.com :)
