@@ -1,14 +1,14 @@
 {
-  "name": "free-portfolio-templates",
+  "name": "freefolio",
   "version": "0.1.0",
-  "description": "Free professional portfolio website templates",
+  "description": "Free Professional Portfolio Website Templates",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jofftiquez/portfolio-templates.git"
+    "url": "git+ssh://git@github.com/jofftiquez/freefolio.git"
   },
   "keywords": [
     "portfolio",
@@ -23,7 +23,7 @@
   "author": "Jofferson R Tiquez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jofftiquez/portfolio-templates/issues"
+    "url": "https://github.com/jofftiquez/freefolio/issues"
   },
-  "homepage": "https://github.com/jofftiquez/portfolio-templates#readme"
+  "homepage": "https://github.com/jofftiquez/freefolio#readme"
 }
