@@ -4,7 +4,7 @@
 
 ## Templates
 
-- [Plain](https://jofftiquez.github.io/free-portfolio-templates/plain)
+- [Plain](https://freefolio-plain.surge.sh)
 
 ## I am not a web developer, how do I setup my portfolio website?
 
