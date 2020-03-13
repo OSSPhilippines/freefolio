@@ -1,0 +1,29 @@
+{
+  "name": "free-portfolio-templates",
+  "version": "0.1.0",
+  "description": "Free professional portfolio website templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jofftiquez/portfolio-templates.git"
+  },
+  "keywords": [
+    "portfolio",
+    "templates",
+    "cv",
+    "resume",
+    "website",
+    "template",
+    "cv",
+    "template"
+  ],
+  "author": "Jofferson R Tiquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jofftiquez/portfolio-templates/issues"
+  },
+  "homepage": "https://github.com/jofftiquez/portfolio-templates#readme"
+}
