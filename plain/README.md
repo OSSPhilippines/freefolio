@@ -4,12 +4,12 @@ A simple black, grey, and white minimalist template for portforlio.
 
 ## Features
 
-- FREE
-- Mobile Responsive
-- SEO Friendly
-- Fast
-- 0 Dependencies
-- Compatible with any web server
+✅ Fast
+✅ FREE
+✅ Mobile Responsive
+✅ SEO Friendly
+✅ Compatible with any web server
+✅ 0 Dependencies
 
 ## How to use
 
