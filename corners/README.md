@@ -2,6 +2,8 @@
 
 A colorful template with simplicity of flat design!
 
+![Corners - Screenshot](screenshot-corners.png "Corners - Screenshot")
+
 ## Features
 
 ✅ Fast
