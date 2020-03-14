@@ -4,6 +4,7 @@
 
 ## Templates
 
+- [Hacker](https://freefolio-hacker.surge.sh)
 - [Plain](https://freefolio-plain.surge.sh)
 
 ## I am not a web developer, how do I setup my portfolio website?
