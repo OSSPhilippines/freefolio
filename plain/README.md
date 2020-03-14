@@ -5,10 +5,15 @@ A simple black, grey, and white minimalist template for portforlio.
 ## Features
 
 ✅ Fast
+
 ✅ FREE
+
 ✅ Mobile Responsive
+
 ✅ SEO Friendly
+
 ✅ Compatible with any web server
+
 ✅ 0 Dependencies
 
 ## How to use
