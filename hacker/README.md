@@ -2,6 +2,8 @@
 
 A simple terminal template for you amazing programmers out there!
 
+![Hacker - Screenshot](screenshot-hacker.png "Hacker - Screenshot")
+
 ## Features
 
 ✅ Fast
