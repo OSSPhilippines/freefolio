@@ -18,6 +18,7 @@ A collection of **100% FREE** to use portfolio website templates.
 
 ## Templates
 
+- [Corners](https://freefolio-corners.surge.sh)
 - [Hacker](https://freefolio-hacker.surge.sh)
 - [Plain](https://freefolio-plain.surge.sh)
 
