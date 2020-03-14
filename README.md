@@ -2,6 +2,20 @@
 
 A collection of **100% FREE** to use portfolio website templates.
 
+## Features
+
+✅ Fast
+
+✅ FREE
+
+✅ Mobile Responsive
+
+✅ SEO Friendly
+
+✅ Compatible with any web server
+
+✅ 0 Dependencies
+
 ## Templates
 
 - [Plain](https://freefolio-plain.surge.sh)
