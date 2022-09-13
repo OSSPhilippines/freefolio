@@ -29,4 +29,4 @@ A simple terminal template for you amazing programmers out there!
 
 > Need help with setting up your portfolio website?
 
-Contact me @ jofftiquez@gmail.com :)
+Contact us at https://ossph.org
