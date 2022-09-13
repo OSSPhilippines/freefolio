@@ -29,4 +29,4 @@ A simple black, grey, and white minimalist template for portforlio.
 
 > Need help with setting up your portfolio website?
 
-Contact me @ jofftiquez@gmail.com :)
+Contact us at https://ossph.org
