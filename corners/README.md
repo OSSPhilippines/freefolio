@@ -29,4 +29,4 @@ A colorful template with simplicity of flat design!
 
 > Need help with setting up your portfolio website?
 
-Contact me @ jofftiquez@gmail.com :)
+Contact us at https://ossph.org
