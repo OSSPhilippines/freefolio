@@ -26,4 +26,4 @@ A collection of **100% FREE** to use portfolio website templates.
 
 Need help with setting up your portfolio website?
 
-Contact me @ jofftiquez@gmail.com :)
+Contact us at https://ossph.org
