@@ -18,9 +18,10 @@ A collection of **100% FREE** to use portfolio website templates.
 
 ## Templates
 
-- [Corners](https://freefolio-corners.surge.sh)
-- [Hacker](https://freefolio-hacker.surge.sh)
-- [Plain](https://freefolio-plain.surge.sh)
+- [Corners](https://ossphilippines.github.io/freefolio/corners)
+- [Hacker](https://ossphilippines.github.io/freefolio/hacker)
+- [Indify](https://ossphilippines.github.io/freefolio/indify)
+- [Plain](https://ossphilippines.github.io/freefolio/plain)
 
 ## I am not a web developer, how do I setup my portfolio website?
 
