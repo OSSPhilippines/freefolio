@@ -18,7 +18,6 @@ A collection of **100% FREE** to use portfolio website templates.
 
 ## Templates
 
-- [Corners](https://ossphilippines.github.io/freefolio/corners)
 - [Hacker](https://ossphilippines.github.io/freefolio/hacker)
 - [Indify](https://ossphilippines.github.io/freefolio/indify)
 - [Plain](https://ossphilippines.github.io/freefolio/plain)
