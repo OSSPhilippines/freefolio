@@ -19,13 +19,13 @@ A collection of **100% FREE** to use portfolio website templates.
 ## Templates
 
 - [Hacker](https://ossphilippines.github.io/freefolio/hacker)
-![image](https://user-images.githubusercontent.com/58241136/191987391-e143a63e-3fba-494b-8061-33152cce33c4.png)
+  <img src="./images/hacker.png" alt="hacker-screenshot"/>
 
 - [Indify](https://ossphilippines.github.io/freefolio/indify)
-![image](https://user-images.githubusercontent.com/58241136/191987670-5eec50a6-9742-46fa-bf9a-06a6a4eba7d0.png)
+  <img src="./images/indify.png" alt="indify-screenshot"/>
 
 - [Plain](https://ossphilippines.github.io/freefolio/plain)
-![image](https://user-images.githubusercontent.com/58241136/191987882-2593480a-d773-4f4c-8376-4afea32c9fa5.png)
+  <img src="./images/plain.png" alt="plain-screenshot"/>
 
 ## I am not a web developer, how do I setup my portfolio website?
 
