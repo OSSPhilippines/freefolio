@@ -451,7 +451,8 @@ footer {
     width: 100%;
   }
   .section-highlight {
-    top: -25px;
+    font-size: 3.5rem;
+    top: -16px;
     left: 6vw;
   }
 }
