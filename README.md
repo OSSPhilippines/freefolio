@@ -21,6 +21,7 @@ A collection of **100% FREE** to use portfolio website templates.
 - [Hacker](https://ossphilippines.github.io/freefolio/hacker)
 - [Indify](https://ossphilippines.github.io/freefolio/indify)
 - [Plain](https://ossphilippines.github.io/freefolio/plain)
+- [Beginner](https://ossphilippines.github.io/freefolio/beginner)
 
 ## I am not a web developer, how do I setup my portfolio website?
 

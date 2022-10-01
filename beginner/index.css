@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Updock&display=swap');
+
+/* Setting the margin, padding, box-sizing, and font-family for all elements. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Setting the default background color to white and the default text color to black. */
+:root {
+    --bg-color: white;
+    --txt-color: black;
+}
+
+/* Setting the background color to black and the text color to white. */
+.dark__mode {
+    --bg-color: #222;
+    --txt-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 2;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    min-height: 4.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+    margin: 0 5vw;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.75rem;
+}
+
+
+.navbar-branding {
+    color: var(--txt-color);
+    transform: scale(1.5);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.brandstyle {
+    color: rgb(240, 49, 43);
+}
+
+.nav-link {
+    color: var(--txt-color);
+    font-weight: 500;
+    text-decoration: none;
+    padding: .5rem;
+    background-image: linear-gradient(360deg, rgba(123,63,228,1) 0%, rgba(121,56,235,1) 50%, rgba(190,170,226,1) 100%);
+    background-size: 0% 0.188rem;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size 300ms ease;
+}
+
+.nav-link:hover {
+    background-size: 100% 0.188rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.313rem auto;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease-in-out;
+    color: white;
+}
+
+.mode__con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    min-height: 100vh;
+}
+
+/* Setting the background of the hero section to a gradient. */
+.hero {
+    display: grid;
+    background: radial-gradient(66.32% 66.32% at 54.13% 113.95%,rgba(108,38,255,.2) 0,rgba(242,89,255,0) 100%),linear-gradient(211.99deg,rgba(65,157,241,.2) -4.17%,rgba(45,143,234,0) 68.7%),radial-gradient(100% 100% at 28.65% 0,rgba(109,0,255,.25) 0,rgba(250,247,254,0) 100%);
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 3rem;
+}
+
+.left-hero {
+    width: 50vw;
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.para {
+    letter-spacing: .1ch;
+    text-indent: 1ch;
+    font-size: 1.125rem;
+}
+
+.btn {
+    background-color: #7b3fe4;
+    border: 0;
+    border-radius: 0.625rem;
+    padding: .5rem;
+    color: white;
+    margin-top: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.soclinks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socmed {
+    margin-top: .8rem;
+}
+
+.socmed:hover {
+    transform: scale(1.1);
+}
+
+.txt::first-letter {
+    font-family: Updock;
+    font-size: 3.5rem;
+    color: rgb(240, 49, 43);
+    padding-right: .5rem; 
+}
+
+.exclamation {
+    color: #7b3fe4;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.right-hero {
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.right-hero img {
+    border-radius: 50%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.875rem 0;
+    background-color: var(--bg-color);
+}
+
+.project-heading {
+    display: grid;
+    place-items: center;
+    padding: 1.875rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--txt-color);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    gap: 3.75rem;
+}
+
+.card {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-bottom-right-radius: 1rem;
+}
+
+.card__cover {
+    width: 100%;
+}
+
+.card__cover img {
+    border-top-left-radius: 1rem;
+}
+
+.card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card__content {
+    padding: 1.25rem;
+    background-color: white;
+    border-bottom-right-radius: 1rem;
+}
+
+.card__content p {
+    text-indent: 1ch;
+    height: 6.25rem;
+    width: 15.625rem;
+}
+
+.cardBtn {
+    width: 100%;
+    border-width: 0.063rem;
+    border-style: solid;
+    border-color: #7b3fe4;
+    background: white;
+    border-radius: 0.313rem;
+    padding: .5rem;
+}
+
+.cardBtn:hover {
+    background: #7b3fe4;
+    color: white;
+}
+
+.testimony {
+    background: #7b3fe4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fig__container {
+    width: 100vw;
+}
+
+.testimony {
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    width: 300%;
+    transition: .6s;
+}
+
+.fig {
+    border: 0.125rem solid salmon;
+    border-radius: 0.625rem;
+    margin: 0 15rem; 
+    padding: 4rem;
+    color: #ffffff;
+}
+
+.indicator {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.figBtn {
+    height: 15px;
+    width: 15px;
+    margin: 0 .5rem;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.active__indicator {
+    width: 45px;
+    background-color: salmon;
+}
+
+blockquote {
+    text-indent: 1ch;
+    font-style: italic;
+    padding: 2rem;
+    font-size: 1.125rem;
+}
+
+figcaption {
+    text-align: end;
+    padding: 0 4rem;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.ftr {
+    background-color: #262626;
+    min-height: 15vh;
+    display: grid;
+    place-items: center;
+    color: rgb(229, 229, 229);
+}
+
+/* This is a media query. It is saying that if the screen is less than 769px, then do the following. */
+@media only screen and (max-width:769px) {
+
+    .hamburger{
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 0;
+        top: -100vh;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        width: 100vw;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+
+    .nav-menu.active {
+        top: 4.313rem;
+    }
+}
+
+@media only screen and (max-width:1025px) {
+    
+    .left-hero {
+        padding-left: 4rem;
+    }
+    
+    #hero__img {
+        margin-top: 4rem;
+        margin-right: 8rem;
+        width: 250px;
+        height: 250px;
+    }
+
+    .fig {
+        margin: 0 9.2rem;
+        padding: .2rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:913px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: unset;
+    }
+
+    .left-hero {
+        width: 100vw;
+        padding-left: unset;
+        padding: 7rem;
+    }
+
+    .txt {
+        margin-top: 4.375rem;
+    }
+
+    .right-hero {
+        width: 100vw;
+    }
+
+    #hero__img {
+        margin-bottom: 4rem;
+        margin-right: unset;
+    }
+}
+
+@media only screen and (max-width:821px) {
+
+    .left-hero {
+        padding: 5.5rem;
+    }
+}
+
+@media only screen and (max-width:769px) {
+
+    .left-hero {
+        padding: 4.5rem;
+    }
+
+    .fig {
+        margin: 0 4rem;
+        padding: .2rem;
+    }
+}
+
+@media only screen and (max-width:541px) {
+
+    .left-hero {
+        padding: 3rem;
+    }
+
+    #hero__img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .fig {
+        margin: 0 5rem;
+    }
+}
+
+@media only screen and (max-width:415px) {
+
+    .left-hero {
+        padding: 2rem;
+    }
+
+    #hero__img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .fig {
+        margin: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width:376px) {
+
+    #hero__img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .fig {
+        margin: 0 1rem;
+    }
+}
+
+/* nav-icon-6 */
+.nav-icon-6{
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .nav-icon-6 span{
+    background-color: var(--txt-color);
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 4px;
+  }
+  .nav-icon-6 span:nth-child(1){
+    top:0px;
+    left: 0px;
+  }
+  .nav-icon-6 span:nth-child(2){
+    top:13px;
+    left: 0px;
+  }
+  .nav-icon-6 span:nth-child(3){
+    bottom:0px;
+    left: 0px;
+  }
+  .nav-icon-6:not(.open):hover span:nth-child(1){
+    transform:  scaleY(1.2);
+    left: -5px;
+  }
+  .nav-icon-6:not(.open):hover span:nth-child(2){
+    transform: rotate(5deg) scaleY(1.1);
+  }
+  .nav-icon-6:not(.open):hover span:nth-child(3){
+    transform:  scaleY(1.2);
+    left: 5px;
+  }
+  .nav-icon-6.open span:nth-child(1){
+    transform: rotate(45deg) scaleX(0.7);
+    top: 13PX;
+    left: -8px;
+  }
+  .nav-icon-6.open span:nth-child(2){
+    transform: scale(0);
+    transition-duration: 50ms
+  }
+  .nav-icon-6.open span:nth-child(3){
+    transform: rotate(-45deg) scaleX(0.7);
+    top: 13PX;
+    left: 7px;
+  }
