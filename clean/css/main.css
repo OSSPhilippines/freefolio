@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  color: #3b3b3b;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#c9c9c9));
+  background: linear-gradient(#ffffff, #c9c9c9);
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container header {
+  width: 100%;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container header img {
+  height: 6rem;
+}
+
+.container .content {
+  margin-bottom: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container .content h1, .container .content h3, .container .content hr, .container .content .buttons {
+  z-index: 2;
+}
+
+.container .content h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+
+.container .content h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+
+.container .content hr {
+  width: 50%;
+  margin: 0 auto 3rem;
+}
+
+.container .content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.container .content nav a {
+  padding: 1rem 2rem;
+  margin: .5rem 2rem;
+  outline: 2px solid #3b3b3b;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #005a00;
+  transition: all 300ms;
+}
+
+.container .content nav a:hover {
+  background: black;
+  color: white;
+}
+
+.container .copyrightDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .copyrightDiv .copyright {
+  position: absolute;
+  bottom: .5rem;
+  display: block;
+  text-align: center;
+}
+
+.container .plant {
+  position: absolute;
+  height: 30rem;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+.container footer {
+  height: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-filter: invert(0.5);
+          filter: invert(0.5);
+  z-index: 2;
+}
+
+.container footer .social a {
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.container footer .social a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: invert(0);
+          filter: invert(0);
+}
+
+.container footer .social a img {
+  height: 3rem;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    padding: 2rem 2rem 8rem;
+  }
+  .container .plant {
+    height: calc( 20rem + 20vw);
+  }
+  .container header img {
+    height: 5rem;
+  }
+  .container .content {
+    padding-bottom: 10rem;
+  }
+  .container .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .container .content h1 strong {
+    display: block;
+  }
+  .container .content h3 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .container .content hr {
+    margin-bottom: 1rem;
+  }
+  .container .content nav a {
+    font-size: 1.2rem;
+    padding: .5rem 1.5rem;
+  }
+  .container .copyrightDiv .copyright {
+    bottom: 4rem;
+  }
+  .container footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container footer .social {
+    -webkit-filter: invert(0);
+            filter: invert(0);
+  }
+  .container footer .social img {
+    height: 2.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
