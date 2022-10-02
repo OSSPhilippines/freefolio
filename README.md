@@ -27,8 +27,12 @@ A collection of **100% FREE** to use portfolio website templates.
 - [Plain](https://ossphilippines.github.io/freefolio/plain)
   <img src="./images/plain.png" alt="plain-screenshot"/>
 
+- [Outlines](https://ossphilippines.github.io/freefolio/outlines)
+  <img src="./images/outlines.png" alt="outlines-screenshot"/>
+
 - [Clean](https://ossphilippines.github.io/freefolio/clean)
   <img src="./images/clean.png" alt="clean-screenshot"/>
+
 
 ## I am not a web developer, how do I setup my portfolio website?
 
