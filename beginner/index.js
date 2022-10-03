@@ -69,34 +69,14 @@ darkModeToggle.addEventListener('click', () => {
 const figBtn = document.querySelectorAll('.figBtn')
 const slide = document.querySelectorAll('.slide')
 
-/* This is adding an event listener to the first figBtn. When the first figBtn is clicked, the slide
-is moved to the first slide. The for loop is iterating over all the figBtns and removing the
-active__indicator class. The first figBtn is then given the active__indicator class. */
-figBtn[0].addEventListener('click', () => {
-  slide[0].style.transform = 'translateX(0vw)'
-  for(let i = 0; i < 3; i++) {
-    figBtn[i].classList.remove('active__indicator')
-  }
-  figBtn[0].classList.add('active__indicator')
-})
-/* This is adding an event listener to the second figBtn. When the second figBtn is clicked, the slide
-is
-moved to the second slide. The for loop is iterating over all the figBtns and removing the
-active__indicator class. The second figBtn is then given the active__indicator class. */
-figBtn[1].addEventListener('click', () => {
-  slide[0].style.transform = 'translateX(-100vw)'
-  for(let i = 0; i < 3; i++) {
-    figBtn[i].classList.remove('active__indicator')
-  }
-  figBtn[1].classList.add('active__indicator')
-})
-/* This is adding an event listener to the third figBtn. When the third figBtn is clicked, the slide is
-moved to the third slide. The for loop is iterating over all the figBtns and removing the
-active__indicator class. The third figBtn is then given the active__indicator class. */
-figBtn[2].addEventListener('click', () => {
-  slide[0].style.transform = 'translateX(-200vw)'
-  for(let i = 0; i < 3; i++) {
-    figBtn[i].classList.remove('active__indicator')
-  }
-  figBtn[2].classList.add('active__indicator')
+/* This is a forEach loop that is iterating over all the figBtn and adding an event listener to each
+one. When the figBtn is clicked, the slide is translated to the index of the figBtn. */
+const num = ['0vw', '-100vw', '-200vw']
+figBtn.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    slide[0].style.transform = `translateX(${num[index]})`
+    const getActive = document.querySelector('.active__indicator')
+    getActive.classList.remove('active__indicator')
+    btn.classList.add('active__indicator')
+  })
 })
