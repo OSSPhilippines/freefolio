@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hacker | Free Professional Portfolio Website Templates by Jofferson Tiquez</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
@@ -121,17 +127,8 @@
                 <h3 v-if="contacts && contacts.phoneNo">{{contacts.phoneNo}}</h3>
               </v-col>
               <v-col class="text-center" cols="12">
-                <v-btn
-                  v-for="(link, index) in contactLinks"
-                  outlined
-                  rounded
-                  class="ma-1"
-                  target="_blank"
-                  :href="link.link"
-                  :key="index"
-                  color="primary"
-                  class="primary--text"
-                >
+                <v-btn v-for="(link, index) in contactLinks" outlined rounded class="ma-1" target="_blank"
+                  :href="link.link" :key="index" color="primary" class="primary--text">
                   {{link.name}}
                 </v-btn>
               </v-col>
@@ -141,7 +138,8 @@
       </v-container>
       <v-footer>
         <v-spacer></v-spacer>
-        <small>Template made with <v-icon class="red--text">mdi-heart</v-icon> by <a href="https://twitter.com/jrtiquez" target="_blank">Jofferson R Tiquez</a></small>
+        <small>Template made with <v-icon class="red--text">mdi-heart</v-icon> by <a href="https://twitter.com/jrtiquez"
+            target="_blank">Jofferson R Tiquez</a></small>
       </v-footer>
     </v-app>
   </div>
@@ -168,23 +166,23 @@
           }
         }
       }),
-      data () {
+      data() {
         return {
           menu: false,
           ...window.PorfolioConfig
         };
       },
       computed: {
-        $isMobile () {
+        $isMobile() {
           return this.$vuetify.breakpoint.smAndDown;
         },
-        sectionHeight () {
+        sectionHeight() {
           return {
             style: 'min-height: 100vh',
             class: 'fill-height'
           }
         },
-        contactLinks () {
+        contactLinks() {
           if (this.contacts && this.contacts.links && this.contacts.links.length) {
             return this.contacts.links;
           }
