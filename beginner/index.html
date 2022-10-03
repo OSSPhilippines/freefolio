@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- This is the header section of the page. It contains the navigation bar and the hamburger menu. -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="navbar-branding">Lo<span class="brandstyle">go</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#1" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#2" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#3" class="nav-link">Testimony</a></li>
+                <li class="nav-item">
+                    <div class="mode__con">
+                        <img class="lightswitch" src="assets/moon.svg" alt="moon icon">
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <div class="icon nav-icon-6">
+                    <span></span>   
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- This is the main content of the page. -->
+    <main>
+        <section class="hero" id="1">
+            <div class="left-hero">
+                <h1 class="txt">Hello world<span class="exclamation">&#33;</span></h1>
+                <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque deleniti aliquam similique?</p>
+                <div class="soclinks">
+                    <button class="btn" type="button">Click here!</button>
+                    <a class="socmed" href="#">
+                        <img src="assets/fb.svg" alt="Facebook icon">
+                    </a>
+                    <a class="socmed" href="#">
+                        <img src="assets/in.svg" alt="Twitter icon">
+                    </a>
+                </div>
+            </div>
+            <div class="right-hero">
+                <img id="hero__img" src="assets/undraw_developer_activity_re_39tg.svg" alt="right-hero">
+            </div>
+        </section>
+        <section class="projects" id="2">
+            <h2 class="project-heading">Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__cover">
+                        <img src="https://picsum.photos/290/150" alt="Avatar">
+                    </div>
+                    <div class="card__content">
+                        <h4><b>Jane Doe</b></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit modi inventore nisi, excepturi sit.</p>
+                        <button class="cardBtn" type="button">Link here --></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__cover">
+                        <img src="https://picsum.photos/290/150" alt="Avatar">
+                    </div>
+                    <div class="card__content">
+                        <h4><b>Jane Doe</b></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit modi inventore nisi, excepturi sit.</p>
+                        <button class="cardBtn" type="button">Link here --></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__cover">
+                        <img src="https://picsum.photos/290/150" alt="Avatar">
+                    </div>
+                    <div class="card__content">
+                        <h4><b>Jane Doe</b></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit modi inventore nisi, excepturi sit.</p>
+                        <button class="cardBtn" type="button">Link here --></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimony" id="3">
+            <div class="fig__container">
+                <div class="testimonial">
+                    <div class="slide">
+                        <figure class="fig fade">
+                            <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
+                            <figcaption>~John Doe</figcaption>
+                        </figure>
+                        <figure class="fig fade">
+                            <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
+                            <figcaption>~John Doe</figcaption>
+                        </figure>
+                        <figure class="fig fade">
+                            <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
+                            <figcaption>~John Doe</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="indicator">
+                    <span class="figBtn active__indicator"></span>
+                    <span class="figBtn"></span>
+                    <span class="figBtn"></span>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+<!-- This is the footer section of the page. It contains the copyright information. -->
+    <footer class="ftr">
+        <div>Made with ❤️ by @mpotane</div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
