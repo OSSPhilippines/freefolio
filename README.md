@@ -28,6 +28,7 @@ A collection of **100% FREE** to use portfolio website templates.
   <img src="./images/plain.png" alt="plain-screenshot"/>
   
 - [Beginner](https://ossphilippines.github.io/freefolio/beginner)
+  <img src="./images/beginner.png" alt="beginner-screenshot"/>
 
 - [Outlines](https://ossphilippines.github.io/freefolio/outlines)
   <img src="./images/outlines.png" alt="outlines-screenshot"/>
