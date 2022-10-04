@@ -2,7 +2,7 @@ name: "Index.html updater"
 
 on:
   push:
-    branch:
+    branches:
       - main
 
 jobs:
@@ -13,6 +13,6 @@ jobs:
       - name: Run script
         run: |
           cd scripts/
-          chmod -x index-update.sh
+          chmod -x ./index-update.sh
           ./index-update.sh
         shell:  bash
