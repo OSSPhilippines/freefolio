@@ -24,7 +24,7 @@
 
 ## ⭐ HOW TO MAKE A PULL REQUEST:
 
-**1.** Start by making a Fork of the [**YourQuotes**](https://github.com/OSSPhilippines/freefolio) repository. Click on the <a href="https://github.com/OSSPhilippines/freefolio/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
+**1.** Start by making a Fork of the [**Freefolio**](https://github.com/OSSPhilippines/freefolio) repository. Click on the <a href="https://github.com/OSSPhilippines/freefolio/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
 
 **2.** Clone your new fork of the repository in the terminal/CLI on your computer with the following command:
 
@@ -35,7 +35,7 @@ git clone https://github.com/<your-github-username>/freefolio
 **3.** Navigate to the newly created LinkFree project directory:
 
 ```bash
-cd YourQuotes
+cd freefolio
 ```
 
 **4.** Create a new branch:
@@ -74,7 +74,7 @@ git push origin YourBranchName
 
 **8.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**9.** **Congratulations!** You've made your first contribution to [**YourQuotes**](https://github.com/OSSPhilippines/freefolio)! 🙌🏼
+**9.** **Congratulations!** You've made your first contribution to [**Freefolio**](https://github.com/OSSPhilippines/freefolio)! 🙌🏼
 
 **_:trophy: After this, the maintainers will review the PR and will merge it if it helps move the freefolio project forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
 
