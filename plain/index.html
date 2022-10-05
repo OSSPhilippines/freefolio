@@ -1,222 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Plain | Free Professional Portfolio Website Templates by Jofferson Tiquez</title>
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <style>
-    .v-application,
-    .v-application .display-4,
-    .v-application .display-3,
-    .v-application .display-2,
-    .v-application .display-1,
-    .v-application .headline,
-    .v-application .title,
-    .v-application .subtitle-1,
-    .v-application .subtitle-2,
-    .v-application .body-2,
-    .v-application .body-1,
-    .v-application .caption,
-    .v-application .overline {
-      font-family: 'Fjalla One', sans-serif !important;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plain | Free Professional Portfolio Website Templates by Jofferson Tiquez</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style>
+      .v-application,
+      .v-application .body-1,
+      .v-application .body-2,
+      .v-application .caption,
+      .v-application .display-1,
+      .v-application .display-2,
+      .v-application .display-3,
+      .v-application .display-4,
+      .v-application .headline,
+      .v-application .overline,
+      .v-application .subtitle-1,
+      .v-application .subtitle-2,
+      .v-application .title {
+        font-family: 'Fjalla One', sans-serif !important;
+      }
+      :-webkit-any(article, aside, nav, section) h1 {
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
 
-<body>
-  <div id="app">
-    <v-app>
-      <!-- Desktop App Bar -->
-      <v-app-bar v-if="!$isMobile" elevate-on-scroll app color="white">
-        <v-spacer></v-spacer>
-        <v-btn class="ma-1" text large href="#skills">Skills</v-btn>
-        <v-btn class="ma-1" text large href="#works">Recent Works</v-btn>
-        <v-btn class="ma-1" text large href="#hobbies">Hobbies</v-btn>
-        <v-btn class="ma-1" text large href="#contact" outlined>Let's Talk!</v-btn>
-        <v-spacer></v-spacer>
-      </v-app-bar>
-      <!-- Desktop App Bar End -->
-      <!-- Mobile App Bar -->
-      <v-app-bar v-if="$isMobile" elevate-on-scroll app color="white">
-        <v-menu
-          transition="slide-x-transition"
-          bottom
-          right
-        >
-          <template v-slot:activator="{ on }">
-            <v-btn
-              color="primary"
-              v-on="on"
-              dark
-              icon
-            >
-              <v-icon class="black--text">mdi-menu</v-icon>
-            </v-btn>
-          </template>
-
-          <v-list width="200">
-            <v-list-item link href="#skills">
-              <v-list-item-title>Skills</v-list-item-title>
-            </v-list-item>
-            <v-list-item link href="#works">
-              <v-list-item-title>Recent Works</v-list-item-title>
-            </v-list-item>
-            <v-list-item link href="#hobbies">
-              <v-list-item-title>Hobbies</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-        <v-spacer></v-spacer>
-        <v-btn class="ma-1" text large href="#contact" outlined>Let's Talk!</v-btn>
-      </v-app-bar>
-      <!-- Mobile App Bar End -->
-      <v-container v-bind="sectionHeight">
-        <v-row align="center" justify="center">
-          <v-col cols="12" md="10" class="text-center">
-            <h1 class="display-4">{{name}}</h1>
-            <h2>{{jobTitle}}</h2>
-          </v-col>
-          <v-col cols="12" md="5" class="text-center">
-            <p>{{jobDescription}}</p>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-container id="skills" v-bind="sectionHeight">
-        <v-row justify="center">
-          <v-col cols="12" md="10" class="text-center">
-            <h1>#Skills</h1>
-          </v-col>
-          <v-col v-for="(skill, index) in skills" cols="12" sm="6" md="4" class="text-center" :key="index">
-            <v-card hover height="100%">
-              <v-card-text>
-                <h2>{{skill.name}}</h2>
-                <br>
-                <p>{{skill.description}}</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-container id="works" v-bind="sectionHeight">
-        <v-row justify="center">
-          <v-col cols="12" md="10" class="text-center">
-            <h1>#Recent Works</h1>
-          </v-col>
-          <v-col v-for="(work, index) in works" cols="12" sm="6" md="4" class="text-center" :key="index">
-            <v-card :href="work.link" target="_blank" hover height="100%">
-              <v-card-text>
-                <h2>{{work.name}}</h2>
-                <br>
-                <p>{{work.description}}</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-container id="hobbies" v-bind="sectionHeight">
-        <v-row justify="center">
-          <v-col cols="12" md="10" class="text-center">
-            <h1>#Hobbies</h1>
-          </v-col>
-          <v-col v-for="(hobby, index) in works" cols="12" sm="6" md="4" class="text-center" :key="index">
-            <v-card :href="hobby.link" hover height="100%">
-              <v-card-text>
-                <h2>{{hobby.name}}</h2>
-                <br>
-                <p>{{hobby.description}}</p>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-container id="contact" v-bind="sectionHeight">
-        <v-row justify="center">
-          <v-col cols="12" md="10" class="text-center">
-            <h1>#Let's Talk!</h1>
-          </v-col>
-          <v-col cols="12" sm="6" md="4" class="text-center">
-            <v-row>
-              <v-col class="text-center" cols="12">
-                <h3 v-if="contacts && contacts.email">{{contacts.email}}</h3>
-                <h3 v-if="contacts && contacts.mobileNo">{{contacts.mobileNo}}</h3>
-                <h3 v-if="contacts && contacts.phoneNo">{{contacts.phoneNo}}</h3>
-              </v-col>
-              <v-col class="text-center" cols="12">
-                <v-btn
-                  v-for="(link, index) in contactLinks"
-                  outlined
-                  rounded
-                  class="ma-1"
-                  target="_blank"
-                  :href="link.link"
-                  :key="index"
-                >
-                  {{link.name}}
+  <body>
+    <div id="app">
+      <v-app>
+        <nav>
+          <!-- Desktop App Bar -->
+          <v-app-bar v-if="!$isMobile" elevate-on-scroll="elevate-on-scroll" app="app" color="white">
+            <v-spacer></v-spacer>
+            <v-btn class="ma-1" text="text" large="large" href="#skills">Skills</v-btn>
+            <v-btn class="ma-1" text="text" large="large" href="#works">Recent Works</v-btn>
+            <v-btn class="ma-1" text="text" large="large" href="#hobbies">Hobbies</v-btn>
+            <v-btn class="ma-1" text="text" large="large" href="#contact" outlined="outlined">Let's Talk!</v-btn>
+            <v-spacer></v-spacer>
+          </v-app-bar>
+          <!-- Desktop App Bar End -->
+          <!-- Mobile App Bar -->
+          <v-app-bar v-if="$isMobile" elevate-on-scroll="elevate-on-scroll" app="app" color="white">
+            <v-menu transition="slide-x-transition" bottom="bottom" right="right">
+              <template v-slot:activator="{ on }">
+                <v-btn color="primary" v-on="on" dark="dark" icon="icon">
+                  <v-icon class="black--text">mdi-menu</v-icon>
                 </v-btn>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-footer>
-        <v-spacer></v-spacer>
-        <small>Template made with <v-icon class="red--text">mdi-heart</v-icon> by <a href="https://twitter.com/jrtiquez" target="_blank">Jofferson R Tiquez</a></small>
-      </v-footer>
-    </v-app>
-  </div>
+              </template>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script src="config.js"></script>
-  <script>
-    var vm = new Vue({
-      el: '#app',
-      vuetify: new Vuetify({
-        theme: {
-          themes: {
-            light: {
-              primary: '#1976D2',
-              secondary: '#424242',
-              accent: '#82B1FF',
-              error: '#FF5252',
-              info: '#2196F3',
-              success: '#4CAF50',
-              warning: '#FFC107',
+              <v-list width="200">
+                <v-list-item link="link" href="#skills">
+                  <v-list-item-title>Skills</v-list-item-title>
+                </v-list-item>
+                <v-list-item link="link" href="#works">
+                  <v-list-item-title>Recent Works</v-list-item-title>
+                </v-list-item>
+                <v-list-item link="link" href="#hobbies">
+                  <v-list-item-title>Hobbies</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+            <v-spacer></v-spacer>
+            <v-btn class="ma-1" text="text" large="large" href="#contact" outlined="outlined">Let's Talk!</v-btn>
+          </v-app-bar>
+          <!-- Mobile App Bar End -->
+        </nav>
+        <header class="container" v-bind="sectionHeight">
+          <v-row align="center" justify="center">
+            <v-col cols="12" md="10" class="text-center">
+              <h1 class="display-4">{{name}}</h1>
+              <h2>{{jobTitle}}</h2>
+            </v-col>
+            <v-col cols="12" md="5" class="text-center">
+              <p>{{jobDescription}}</p>
+            </v-col>
+          </v-row>
+        </header>
+        <main>
+          <section>
+            <v-container id="skills" v-bind="sectionHeight" style="height: auto;">
+              <v-row justify="center">
+                <v-col cols="12" md="10" class="text-center">
+                  <h1>#Skills</h1>
+                </v-col>
+                <v-col v-for="(skill, index) in skills" cols="12" sm="6" md="4" class="text-center" :key="index">
+                  <v-card hover="hover" height="100%">
+                    <v-card-text>
+                      <h2>{{skill.name}}</h2>
+                      <br>
+                      <p>{{skill.description}}</p>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-container>
+          </section>
+          <section>
+            <v-container id="works" v-bind="sectionHeight" style="height: auto;">
+              <v-row justify="center">
+                <v-col cols="12" md="10" class="text-center">
+                  <h1>#Recent Works</h1>
+                </v-col>
+                <v-col v-for="(work, index) in works" cols="12" sm="6" md="4" class="text-center" :key="index">
+                  <v-card :href="work.link" target="_blank" hover="hover" height="100%">
+                    <v-card-text>
+                      <h2>{{work.name}}</h2>
+                      <br>
+                      <p>{{work.description}}</p>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-container>
+          </section>
+          <section>
+            <v-container id="hobbies" v-bind="sectionHeight" style="height: auto;">
+              <v-row justify="center">
+                <v-col cols="12" md="10" class="text-center">
+                  <h1>#Hobbies</h1>
+                </v-col>
+                <v-col v-for="(hobby, index) in works" cols="12" sm="6" md="4" class="text-center" :key="index">
+                  <v-card :href="hobby.link" hover="hover" height="100%">
+                    <v-card-text>
+                      <h2>{{hobby.name}}</h2>
+                      <br>
+                      <p>{{hobby.description}}</p>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-container>
+          </section>
+          <section>
+            <v-container id="contact" v-bind="sectionHeight" style="height: auto;">
+              <v-row justify="center">
+                <v-col cols="12" md="10" class="text-center">
+                  <h1>#Let's Talk!</h1>
+                </v-col>
+                <v-col cols="12" sm="6" md="4" class="text-center">
+                  <v-row>
+                    <v-col class="text-center" cols="12">
+                      <h3 v-if="contacts && contacts.email">{{contacts.email}}</h3>
+                      <h3 v-if="contacts && contacts.mobileNo">{{contacts.mobileNo}}</h3>
+                      <h3 v-if="contacts && contacts.phoneNo">{{contacts.phoneNo}}</h3>
+                    </v-col>
+                    <v-col class="text-center" cols="12">
+                      <v-btn v-for="(link, index) in contactLinks" outlined="outlined" rounded="rounded" class="ma-1" target="_blank" :href="link.link" :key="index">
+                        {{link.name}}
+                      </v-btn>
+                    </v-col>
+                  </v-row>
+                </v-col>
+              </v-row>
+            </v-container>
+          </section>
+        </main>
+        <footer class="v-footer v-sheet theme--light" data-booted="true">
+          <v-spacer></v-spacer>
+          <small>Template made with
+            <v-icon class="red--text">mdi-heart</v-icon>
+            by
+            <a href="https://twitter.com/jrtiquez" target="_blank">Jofferson R Tiquez</a>
+          </small>
+        </footer>
+      </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="config.js"></script>
+    <script>
+      var vm = new Vue({
+        el: '#app',
+        vuetify: new Vuetify({
+          theme: {
+            themes: {
+              light: {
+                primary: '#1976D2',
+                secondary: '#424242',
+                accent: '#82B1FF',
+                error: '#FF5252',
+                info: '#2196F3',
+                success: '#4CAF50',
+                warning: '#FFC107'
+              }
             }
           }
-        }
-      }),
-      data () {
-        return {
-          menu: false,
-          ...window.PorfolioConfig
-        };
-      },
-      computed: {
-        $isMobile () {
-          return this.$vuetify.breakpoint.smAndDown;
-        },
-        sectionHeight () {
+        }),
+        data() {
           return {
-            style: 'min-height: 100vh',
-            class: 'fill-height'
-          }
+            menu: false,
+            ...window.PorfolioConfig
+          };
         },
-        contactLinks () {
-          if (this.contacts && this.contacts.links && this.contacts.links.length) {
-            return this.contacts.links;
+        computed: {
+          $isMobile() {
+            return this.$vuetify.breakpoint.smAndDown;
+          },
+          sectionHeight() {
+            return {style: 'min-height: 100vh', class: 'fill-height'}
+          },
+          contactLinks() {
+            if (this.contacts && this.contacts.links && this.contacts.links.length) {
+              return this.contacts.links;
+            }
+            return [];
           }
-          return [];
         }
-      }
-    });
-  </script>
-</body>
+      });
+    </script>
+  </body>
 
 </html>
