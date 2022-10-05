@@ -1,196 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hacker | Free Professional Portfolio Website Templates by Jofferson Tiquez</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
-  <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <style>
-    #app {
-      background-color: black;
-      background-image: url('./cursor.gif');
-      background-repeat: no-repeat;
-      background-size: 50;
-      background-attachment: fixed;
-      background-position-x: -92px;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hacker | Free Professional Portfolio Website Templates by Jofferson Tiquez</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style>
+      #app {
+        background-color: black;
+        background-image: url("./cursor.gif");
+        background-repeat: no-repeat;
+        background-size: 50;
+        background-attachment: fixed;
+        background-position-x: -92px;
+      }
+      .v-application,
+      .v-application .body-1,
+      .v-application .body-2,
+      .v-application .caption,
+      .v-application .display-1,
+      .v-application .display-2,
+      .v-application .display-3,
+      .v-application .display-4,
+      .v-application .headline,
+      .v-application .overline,
+      .v-application .subtitle-1,
+      .v-application .subtitle-2,
+      .v-application .title {
+        font-family: 'Source Code Pro', monospace !important;
+      }
+      :-webkit-any(article, aside, nav, section) h1 {
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
 
-    .v-application,
-    .v-application .display-4,
-    .v-application .display-3,
-    .v-application .display-2,
-    .v-application .display-1,
-    .v-application .headline,
-    .v-application .title,
-    .v-application .subtitle-1,
-    .v-application .subtitle-2,
-    .v-application .body-2,
-    .v-application .body-1,
-    .v-application .caption,
-    .v-application .overline {
-      font-family: 'Source Code Pro', monospace !important;
-    }
-  </style>
-</head>
+  <body>
+    <div id="app">
+      <v-app>
+        <header class="container" v-bind="sectionHeight">
+          <v-row align="center">
+            <v-col cols="12" md="6">
+              <h1 class="display-4 primary--text">{{name}}</h1>
+              <h2 class="primary--text">{{jobTitle}}</h2>
+              <p>{{jobDescription}}</p>
+              <v-btn href="#skills" text="text" class="primary--text">/Skills</v-btn href="skills">
+              <v-btn href="#works" text="text" class="primary--text">/Recent Works</v-btn>
+              <v-btn href="#hobbies" text="text" class="primary--text">/Hobbies</v-btn>
+              <v-btn href="#contact" text="text" class="primary--text" outlined="outlined">/Contacts</v-btn>
+            </v-col>
+          </v-row>
+        </header>
+        <main class="container">
+          <section class="row mb-5" id="skills">
+            <v-col cols="12" md="6">
+              <h1 class="primary--text">/Skills</h1>
+            </v-col>
+            <v-col v-for="(skill, index) in skills" cols="12" :key="index">
+              <v-card hover="hover" height="100%">
+                <v-card-text>
+                  <h2 class="primary--text">>
+                    {{skill.name}}</h2>
+                  <br>
+                  <p>:{{skill.description}}</p>
+                </v-card-text>
+                <v-footer>
+                  <v-spacer></v-spacer>
+                  <small class="primary--text">~/.skills</small>
+                </v-footer>
+              </v-card>
+            </v-col>
+          </section>
+          <section class="row mb-5" id="works">
+            <v-col cols="12" md="6">
+              <h1 class="primary--text">/Recent Works</h1>
+            </v-col>
+            <v-col v-for="(work, index) in works" cols="12" :key="index">
+              <v-card hover="hover" height="100%">
+                <v-card-text>
+                  <h2 class="primary--text">>
+                    {{work.name}}</h2>
+                  <br>
+                  <p>:{{work.description}}</p>
+                </v-card-text>
+                <v-footer>
+                  <v-spacer></v-spacer>
+                  <small class="primary--text">~/.works</small>
+                </v-footer>
+              </v-card>
+            </v-col>
+          </section>
+          <section class="row mb-5" id="hobbies">
+            <v-col cols="12" md="6">
+              <h1 class="primary--text">/My Hobbies</h1>
+            </v-col>
+            <v-col v-for="(hobby, index) in hobbies" cols="12" :key="index">
+              <v-card hover="hover" height="100%">
+                <v-card-text>
+                  <h2 class="primary--text">>
+                    {{hobby.name}}</h2>
+                  <br>
+                  <p>:{{hobby.description}}</p>
+                </v-card-text>
+                <v-footer>
+                  <v-spacer></v-spacer>
+                  <small class="primary--text">~/.hobbies</small>
+                </v-footer>
+              </v-card>
+            </v-col>
+          </section>
+          <section class="row justify-center" id="contact">
+            <v-col cols="12" md="10" class="text-center">
+              <h1 class="primary--text">/Let's Talk!</h1>
+            </v-col>
+            <v-col cols="12" sm="6" md="4" class="text-center">
+              <v-row>
+                <v-col class="text-center" cols="12">
+                  <h3 v-if="contacts && contacts.email">{{contacts.email}}</h3>
+                  <h3 v-if="contacts && contacts.mobileNo">{{contacts.mobileNo}}</h3>
+                  <h3 v-if="contacts && contacts.phoneNo">{{contacts.phoneNo}}</h3>
+                </v-col>
+                <v-col class="text-center" cols="12">
+                  <v-btn class="ma-1" v-for="(link, index) in contactLinks" outlined="outlined" rounded="rounded" target="_blank" :href="link.link" :key="index" color="primary">
+                    {{link.name}}
+                  </v-btn>
+                </v-col>
+              </v-row>
+            </v-col>
+          </section>
+        </main>
+        <footer class="v-footer v-sheet theme--dark" data-booted="true">
+          <v-spacer></v-spacer>
+          <small>Template made with
+            <v-icon class="red--text">mdi-heart</v-icon>
+            by
+            <a href="https://twitter.com/jrtiquez" target="_blank">Jofferson R Tiquez</a>
+          </small>
+        </footer>
+      </v-app>
+    </div>
 
-<body>
-  <div id="app">
-    <v-app>
-      <v-container v-bind="sectionHeight">
-        <v-row align="center">
-          <v-col cols="12" md="6">
-            <h1 class="display-4 primary--text">{{name}}</h1>
-            <h2 class="primary--text">{{jobTitle}}</h2>
-            <p>{{jobDescription}}</p>
-            <v-btn href="#skills" text class="primary--text">/Skills</v-btn href="skills">
-            <v-btn href="#works" text class="primary--text">/Recent Works</v-btn>
-            <v-btn href="#hobbies" text class="primary--text">/Hobbies</v-btn>
-            <v-btn href="#contact" text class="primary--text" outlined>/Contacts</v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-container>
-        <v-row id="skills" class="mb-5">
-          <v-col cols="12" md="6">
-            <h1 class="primary--text">/Skills</h1>
-          </v-col>
-          <v-col v-for="(skill, index) in skills" cols="12" :key="index">
-            <v-card hover height="100%">
-              <v-card-text>
-                <h2 class="primary--text">> {{skill.name}}</h2>
-                <br>
-                <p>:{{skill.description}}</p>
-              </v-card-text>
-              <v-footer>
-                <v-spacer></v-spacer>
-                <small class="primary--text">~/.skills</small>
-              </v-footer>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row id="works" class="mb-5">
-          <v-col cols="12" md="6">
-            <h1 class="primary--text">/Recent Works</h1>
-          </v-col>
-          <v-col v-for="(work, index) in works" cols="12" :key="index">
-            <v-card hover height="100%">
-              <v-card-text>
-                <h2 class="primary--text">> {{work.name}}</h2>
-                <br>
-                <p>:{{work.description}}</p>
-              </v-card-text>
-              <v-footer>
-                <v-spacer></v-spacer>
-                <small class="primary--text">~/.works</small>
-              </v-footer>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row id="hobbies" class="mb-5">
-          <v-col cols="12" md="6">
-            <h1 class="primary--text">/My Hobbies</h1>
-          </v-col>
-          <v-col v-for="(hobby, index) in hobbies" cols="12" :key="index">
-            <v-card hover height="100%">
-              <v-card-text>
-                <h2 class="primary--text">> {{hobby.name}}</h2>
-                <br>
-                <p>:{{hobby.description}}</p>
-              </v-card-text>
-              <v-footer>
-                <v-spacer></v-spacer>
-                <small class="primary--text">~/.hobbies</small>
-              </v-footer>
-            </v-card>
-          </v-col>
-        </v-row>
-        <v-row id="contact" justify="center">
-          <v-col cols="12" md="10" class="text-center">
-            <h1 class="primary--text">/Let's Talk!</h1>
-          </v-col>
-          <v-col cols="12" sm="6" md="4" class="text-center">
-            <v-row>
-              <v-col class="text-center" cols="12">
-                <h3 v-if="contacts && contacts.email">{{contacts.email}}</h3>
-                <h3 v-if="contacts && contacts.mobileNo">{{contacts.mobileNo}}</h3>
-                <h3 v-if="contacts && contacts.phoneNo">{{contacts.phoneNo}}</h3>
-              </v-col>
-              <v-col class="text-center" cols="12">
-                <v-btn v-for="(link, index) in contactLinks" outlined rounded class="ma-1" target="_blank"
-                  :href="link.link" :key="index" color="primary" class="primary--text">
-                  {{link.name}}
-                </v-btn>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-footer>
-        <v-spacer></v-spacer>
-        <small>Template made with <v-icon class="red--text">mdi-heart</v-icon> by <a href="https://twitter.com/jrtiquez"
-            target="_blank">Jofferson R Tiquez</a></small>
-      </v-footer>
-    </v-app>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script src="config.js"></script>
-  <script>
-    var vm = new Vue({
-      el: '#app',
-      vuetify: new Vuetify({
-        theme: {
-          dark: true,
-          themes: {
-            dark: {
-              primary: '#19c113',
-              secondary: '#424242',
-              accent: '#82B1FF',
-              error: '#FF5252',
-              info: '#2196F3',
-              success: '#4CAF50',
-              warning: '#FFC107',
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="config.js"></script>
+    <script>
+      var vm = new Vue({
+        el: '#app',
+        vuetify: new Vuetify({
+          theme: {
+            dark: true,
+            themes: {
+              dark: {
+                primary: '#19c113',
+                secondary: '#424242',
+                accent: '#82B1FF',
+                error: '#FF5252',
+                info: '#2196F3',
+                success: '#4CAF50',
+                warning: '#FFC107'
+              }
             }
           }
-        }
-      }),
-      data() {
-        return {
-          menu: false,
-          ...window.PorfolioConfig
-        };
-      },
-      computed: {
-        $isMobile() {
-          return this.$vuetify.breakpoint.smAndDown;
-        },
-        sectionHeight() {
+        }),
+        data() {
           return {
-            style: 'min-height: 100vh',
-            class: 'fill-height'
-          }
+            menu: false,
+            ...window.PorfolioConfig
+          };
         },
-        contactLinks() {
-          if (this.contacts && this.contacts.links && this.contacts.links.length) {
-            return this.contacts.links;
+        computed: {
+          $isMobile() {
+            return this.$vuetify.breakpoint.smAndDown;
+          },
+          sectionHeight() {
+            return {style: 'min-height: 100vh', class: 'fill-height'}
+          },
+          contactLinks() {
+            if (this.contacts && this.contacts.links && this.contacts.links.length) {
+              return this.contacts.links;
+            }
+            return [];
           }
-          return [];
         }
-      }
-    });
-  </script>
-</body>
+      });
+    </script>
+  </body>
 
 </html>
