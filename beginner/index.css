@@ -108,7 +108,7 @@ li {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 /* Setting the background of the hero section to a gradient. */
@@ -128,7 +128,7 @@ section {
 }
 
 .txt {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -201,7 +201,7 @@ section {
     display: grid;
     place-items: center;
     padding: 1.875rem 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--txt-color);
 }
