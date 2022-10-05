@@ -30,23 +30,23 @@ A collection of **100% FREE** to use portfolio website templates.
 
 ## 🎨 Templates
 
-- [Hacker](https://ossphilippines.github.io/freefolio/hacker)
-  <img src="./images/hacker.png" alt="hacker-screenshot"/>
+<h3><a href="https://ossphilippines.github.io/freefolio/hacker">Hacker</a></h3>
+<img src="./images/hacker.png" alt="hacker-screenshot"/>
 
-- [Indify](https://ossphilippines.github.io/freefolio/indify)
-  <img src="./images/indify.png" alt="indify-screenshot"/>
+<h3><a href="https://ossphilippines.github.io/freefolio/indify">Indify</a></h3>
+<img src="./images/indify.png" alt="indify-screenshot"/>
 
-- [Plain](https://ossphilippines.github.io/freefolio/plain)
-  <img src="./images/plain.png" alt="plain-screenshot"/>
+<h3><a href="https://ossphilippines.github.io/freefolio/plain">Plain</a></h3>
+<img src="./images/plain.png" alt="plain-screenshot"/>
   
-- [Beginner](https://ossphilippines.github.io/freefolio/beginner)
-  <img src="./images/beginner.png" alt="beginner-screenshot"/>
+<h3><a href="https://ossphilippines.github.io/freefolio/beginner">Beginner</a></h3>
+<img src="./images/beginner.png" alt="beginner-screenshot"/>
 
-- [Outlines](https://ossphilippines.github.io/freefolio/outlines)
-  <img src="./images/outlines.png" alt="outlines-screenshot"/>
+<h3><a href="https://ossphilippines.github.io/freefolio/outlines">Outlines</a></h3>
+<img src="./images/outlines.png" alt="outlines-screenshot"/>
 
-- [Clean](https://ossphilippines.github.io/freefolio/clean)
-  <img src="./images/clean.png" alt="clean-screenshot"/>
+<h3><a href="https://ossphilippines.github.io/freefolio/clean">Clean</a></h3>
+<img src="./images/clean.png" alt="clean-screenshot"/>
 
 ## 🎯 Contributing
 
