@@ -48,7 +48,12 @@ git checkout -b YourBranchName
 
 ⚠️ **Make sure** not to run the commands `git add .` or `git add *`. Instead, stage your changes for each file/folder
 
-**5.** Add those changes to the branch you just created using the git add command:
+**5.** Add those changes to the branch you just created using the git add command. To let Git track files for a commit, we need to run the following in the terminal:
+
+```bash
+git add my_new_file
+```
+And for adding several files to the staging area in one go. Do this instead, it is more convenient.
 
 ```bash
 git add .
@@ -60,7 +65,7 @@ git add .
 git status
 ```
 
-**6.** Now commit those changes using the git commit command::
+**6.** Now commit those changes using the git commit command:
 
 ```bash
 git commit -m "<your_commit_message>"
