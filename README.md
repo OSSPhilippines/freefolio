@@ -48,6 +48,18 @@ A collection of **100% FREE** to use portfolio website templates.
 <h3><a href="https://ossphilippines.github.io/freefolio/clean">Clean</a></h3>
 <img src="./images/clean.png" alt="clean-screenshot"/>
 
+## 🎯 Check ESLinters
+
+**Commands;**
+
+**To install run:**
+
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+**To check errors run:** 
+
+npx eslint .
+
 ## 🎯 Contributing
 
 Please read the project's [contributing guide](./CONTRIBUTING.md) for the process for submitting pull requests to us.
