@@ -65,18 +65,3 @@ darkModeToggle.addEventListener('click', () => {
     disableDarkMode(); 
   }
 });
-
-const figBtn = document.querySelectorAll('.figBtn')
-const slide = document.querySelectorAll('.slide')
-
-/* This is a forEach loop that is iterating over all the figBtn and adding an event listener to each
-one. When the figBtn is clicked, the slide is translated to the index of the figBtn. */
-const num = ['0vw', '-100vw', '-200vw']
-figBtn.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    slide[0].style.transform = `translateX(${num[index]})`
-    const getActive = document.querySelector('.active__indicator')
-    getActive.classList.remove('active__indicator')
-    btn.classList.add('active__indicator')
-  })
-})

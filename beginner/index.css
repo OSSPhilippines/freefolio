@@ -266,18 +266,12 @@ section {
     align-items: center;
 }
 
-.fig__container {
-    width: 100vw;
+.swiper {
+    width: 100%;
 }
 
-.testimony {
-    overflow: hidden;
-}
-
-.slide {
-    display: flex;
-    width: 300%;
-    transition: .6s;
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: salmon;
 }
 
 .fig {
@@ -286,27 +280,6 @@ section {
     margin: 0 15rem; 
     padding: 4rem;
     color: #ffffff;
-}
-
-.indicator {
-    text-align: center;
-    padding: 1.5rem;
-}
-
-.figBtn {
-    height: 15px;
-    width: 15px;
-    margin: 0 .5rem;
-    background-color: white;
-    border-radius: 15px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.6s;
-}
-
-.active__indicator {
-    width: 45px;
-    background-color: salmon;
 }
 
 blockquote {
@@ -376,6 +349,12 @@ figcaption {
     
     .left-hero {
         padding-left: 4rem;
+    }
+
+    figcaption {
+        transform: translateY(-1rem);
+        padding-top: .8rem;
+        padding-bottom: 1rem;
     }
     
     #hero__img {

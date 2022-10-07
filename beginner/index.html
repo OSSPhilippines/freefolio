@@ -7,6 +7,7 @@
     <title>Landing page</title>
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <!-- This is the header section of the page. It contains the navigation bar and the hamburger menu. -->
@@ -93,30 +94,28 @@
             </div>
         </section>
         <section class="testimony" id="testimonial__section">
-            <div class="fig__container">
-                <!-- This is the testimonial section of the page. It contains the testimonials of the users. -->
-                <div class="testimonial">
-                    <div class="slide">
-                        <figure class="fig fade">
-                            <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
-                            <figcaption>~John Doe</figcaption>
-                        </figure>
-                        <figure class="fig fade">
-                            <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
-                            <figcaption>~John Doe</figcaption>
-                        </figure>
-                        <figure class="fig fade">
-                            <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
-                            <figcaption>~John Doe</figcaption>
-                        </figure>
-                    </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <figure class="fig">
+                        <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
+                        <figcaption>~John Doe</figcaption>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="fig">
+                        <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
+                        <figcaption>~John Doe</figcaption>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="fig">
+                        <blockquote><img src="assets/open.svg" alt="open quotation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam unde rerum atque obcaecati ipsum consectetur velit libero, officia tempore. <img src="assets/close.svg" alt="close quotation"></blockquote>
+                        <figcaption>~John Doe</figcaption>
+                    </figure>
+                  </div>
                 </div>
-                <!-- The indicator for the testimonial section. -->
-                <div class="indicator">
-                    <span class="figBtn active__indicator"></span>
-                    <span class="figBtn"></span>
-                    <span class="figBtn"></span>
-                </div>
+                <div class="indicator swiper-pagination"></div>
             </div>
             
         </section>
@@ -126,6 +125,28 @@
     <footer class="ftr">
         <div>Made with ❤️ by @mpotane</div>
     </footer>
+
+    <!-- main javascript -->
     <script src="index.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+    let swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    
 </body>
 </html>
