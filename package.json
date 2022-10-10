@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/jofftiquez/freefolio/issues"
   },
-  "homepage": "https://github.com/jofftiquez/freefolio#readme"
+  "homepage": "https://github.com/jofftiquez/freefolio#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  }
 }
