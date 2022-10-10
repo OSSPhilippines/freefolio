@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ca4361;
+    --paragraph: #979797;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.links {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.links a:hover {
+    color: var(--primary-color);
+    transition: all;
+    transition-duration: .2s;
+}
+
+.buttons button {
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 51px;
+    width: 145px;
+    transition: all;
+    transition-duration: .2s;
+
+}
+
+.filled {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.filled:hover {
+    background-color: white;
+    border-color: var(--primary-color);
+    color: #ca4361;
+
+}
+
+.outlined {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.outlined:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid transparent;
+}
+
+.Line {
+    border: 2px solid var(--primary-color);
+    width: 32px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+
+/*Content Styling*/
+main {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    /*vertically align*/
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+.Hero h1 {
+    font-size: 52px;
+    font-weight: 600;
+    margin-right: 60px;
+    width: 446px;
+
+}
+
+.Hero span {
+    color: var(--primary-color);
+}
+
+.Hero>p {
+    margin-top: 22px;
+    font-size: 25px;
+    width: 370px;
+    color: var(--paragraph);
+
+}
+
+.Hero .cta {
+    width: 270px;
+    height: 65px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 21px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin-top: 40px;
+    transition: all;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+/*Now responsove codeing*/
+
+
+
+
+/*  Table responsive code*/
+@media(max-width: 1250px) {
+    /*
+    Testin
+    
+    body{
+        background-color: black;
+    }*/
+
+    .illustration {
+        display: none;
+    }
+
+    .Hero {
+        text-align: center;
+    }
+
+    .Hero h1,
+    p {
+        margin-right: 0;
+    }
+
+    .Hero h1 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 40px;
+
+    }
+
+    .Hero p {
+        margin: 22px auto;
+        margin-bottom: 0;
+        width: 70%;
+        font-size: 18px;
+
+    }
+
+    .cta {
+        font-size: 18px !important;
+        width: 216px !important;
+        height: 52px !important;
+    }
+
+
+
+}
+
+.menu {
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    width: 280px;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.close-icon {
+    margin-top: 40px;
+
+}
+
+.divider {
+    border: 1px solid grey;
+    margin: 40px 0px;
+}
+
+.menu button {
+    width: 100%;
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+.menu ul {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.menu li a {
+    color: var(--primary-color);
+    margin: 0;
+
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin-top: 40px;
+
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Mobile Responsive*/
+@media(max-width: 800px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+    }
+
+    .links {
+        display: contents;
+    }
+
+}
