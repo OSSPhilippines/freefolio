@@ -50,6 +50,10 @@ header {
   transition-duration: 300ms;
 }
 
+header h1{
+  font-size: 12pt;
+}
+
 footer {
   display: flex;
   flex-direction: row;
