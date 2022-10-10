@@ -48,6 +48,9 @@ A collection of **100% FREE** to use portfolio website templates.
 <h3><a href="https://ossphilippines.github.io/freefolio/clean">Clean</a></h3>
 <img src="./images/clean.png" alt="clean-screenshot"/>
 
+<h3><a href="https://ossphilippines.github.io/freefolio/deepsea">Deep Sea</a></h3>
+<img src="./images/deepsea.png" alt="deepsea-screenshot"/>
+
 ## 🎯 Contributing
 
 Please read the project's [contributing guide](./CONTRIBUTING.md) for the process for submitting pull requests to us.
