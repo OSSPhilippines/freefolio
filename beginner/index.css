@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Updock&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Carter+One&display=swap");
 
 /* Setting the margin, padding, box-sizing, and font-family for all elements. */
 * {
@@ -26,12 +26,12 @@ html {
 }
 
 body {
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 header {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background-color: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     z-index: 2;
@@ -60,10 +60,21 @@ li {
 
 .navbar-branding {
     color: var(--txt-color);
-    transform: scale(1.5);
+    transform: scale(1.1);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .brandstyle {
@@ -72,10 +83,9 @@ li {
 
 .nav-link {
     color: var(--txt-color);
-    font-weight: 500;
     text-decoration: none;
     padding: .5rem;
-    background-image: linear-gradient(360deg, rgba(123,63,228,1) 0%, rgba(121,56,235,1) 50%, rgba(190,170,226,1) 100%);
+    background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #D3FF6D9C 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #8A4FFFF5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #6DFFAEF5 24%, #073AFF00 100%),linear-gradient(125deg, #4EB5FFFF 1%, #4C00FCFF 100%);;
     background-size: 0% 0.188rem;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -108,7 +118,8 @@ li {
 }
 
 section {
-    min-height: 80vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 /* Setting the background of the hero section to a gradient. */
@@ -118,6 +129,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 3rem;
+    text-align: center;
 }
 
 .left-hero {
@@ -128,54 +140,51 @@ section {
 }
 
 .txt {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    font-family: 'Carter One', sans-serif;
     font-weight: bold;
+    color: #7b3fe4;
 }
 
-.para {
-    letter-spacing: .1ch;
-    text-indent: 1ch;
-    font-size: 1.125rem;
+.txt__upper {
+    font-weight: 900;
+    text-decoration-line: underline;
+    text-decoration-color: salmon;
+}
+
+.txt__under {
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-color: salmon;
+}
+
+.desc {
+    padding: .5rem;
 }
 
 .btn {
-    background-color: #7b3fe4;
-    border: 0;
-    border-radius: 0.625rem;
-    padding: .5rem;
-    color: white;
+    font-size: 1rem;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #7b3fe4;
+    padding: 1rem;
+    color: #222;
     margin-top: .5rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.soclinks {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-}
-
-.socmed {
-    margin-top: .8rem;
-}
-
-.socmed:hover {
-    transform: scale(1.1);
-}
-
-.txt::first-letter {
-    font-family: Updock;
-    font-size: 3.5rem;
-    color: rgb(240, 49, 43);
-    padding-right: .5rem; 
-}
-
-.exclamation {
-    color: #7b3fe4;
+    box-shadow: 4px 4px 0px #7b3fe4;
 }
 
 .btn:hover {
     transform: scale(1.1);
+}
+
+.txt::first-letter {
+    font-size: 3.7rem;
+}
+
+.exclamation {
+    color: #7b3fe4;
 }
 
 .right-hero {
@@ -330,7 +339,7 @@ figcaption {
         gap: 0;
         flex-direction: column;
         background-color: var(--bg-color);
-        width: 100vw;
+        width: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -384,17 +393,17 @@ figcaption {
     }
 
     .left-hero {
-        width: 100vw;
+        width: 100%;
         padding-left: unset;
         padding: 7rem;
     }
 
-    .txt {
+    .txt__upper {
         margin-top: 4.375rem;
     }
 
     .right-hero {
-        width: 100vw;
+        width: 100%;
     }
 
     #hero__img {
