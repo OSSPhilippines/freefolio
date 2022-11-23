@@ -173,8 +173,8 @@ section {
     /*transform: scale(1.1);*/
     color: rgb(239, 248, 252);
     background-color: #7b3fe4;
-    box-shadow: none;
-    border: 0;
+    box-shadow: unset;
+    border: unset;
 }
 
 .txt::first-letter {
@@ -296,6 +296,10 @@ blockquote {
     font-style: italic;
     padding: 2rem;
     font-size: 1.125rem;
+}
+
+blockquote img{
+    display: unset;
 }
 
 figcaption {
