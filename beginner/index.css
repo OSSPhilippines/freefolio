@@ -1,12 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Carter+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-/* Setting the margin, padding, box-sizing, and font-family for all elements. */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    cursor: url('./assets/cursor.cur'),auto;
 }
 
 /* Setting the default background color to white and the default text color to black. */
@@ -26,7 +22,7 @@ html {
 }
 
 body {
-    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -98,7 +94,6 @@ li {
 
 .hamburger {
     display: none;
-    cursor: pointer;
 }
 
 .bar {
@@ -143,23 +138,22 @@ section {
     font-size: 3.5rem;
     font-family: 'Carter One', sans-serif;
     font-weight: bold;
-    color: #7b3fe4;
+    color: #8358cd;
 }
 
 .txt__upper {
-    font-weight: 900;
-    text-decoration-line: underline;
-    text-decoration-color: salmon;
+    font-weight: 800;
+    color: rgb(83, 81, 81);
 }
 
 .txt__under {
-    font-weight: bold;
-    text-decoration-line: underline;
-    text-decoration-color: salmon;
+    font-weight: 700;
+    color: rgb(83, 81, 81);
 }
 
 .desc {
     padding: .5rem;
+    color: rgb(119, 119, 119);
 }
 
 .btn {
@@ -176,7 +170,11 @@ section {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
+    color: rgb(239, 248, 252);
+    background-color: #7b3fe4;
+    box-shadow: unset;
+    border: unset;
 }
 
 .txt::first-letter {
@@ -225,7 +223,7 @@ section {
 
 .card {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-bottom-right-radius: 1rem;
+    border-radius: 12px;
 }
 
 .card__cover {
@@ -233,7 +231,8 @@ section {
 }
 
 .card__cover img {
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .card:hover {
@@ -243,7 +242,8 @@ section {
 .card__content {
     padding: 1.25rem;
     background-color: white;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .card__content p {
@@ -268,7 +268,7 @@ section {
 }
 
 .testimony {
-    background: #7b3fe4;
+    background: #7757ae;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,6 +296,10 @@ blockquote {
     font-style: italic;
     padding: 2rem;
     font-size: 1.125rem;
+}
+
+blockquote img{
+    display: unset;
 }
 
 figcaption {
@@ -481,7 +485,6 @@ figcaption {
     height: 30px;
     margin: 10px 10px;
     position: relative;
-    cursor: pointer;
     display: inline-block;
   }
   .nav-icon-6 span{
