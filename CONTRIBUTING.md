@@ -48,7 +48,27 @@ git checkout -b YourBranchName
 
 ⚠️ **Make sure** not to run the commands `git add .` or `git add *`. Instead, stage your changes for each file/folder
 
-**5.** Add those changes to the branch you just created using the git add command. To let Git track files for a commit, we need to run the following in the terminal:
+**4.** Start developement:
+
+All template must conform to the following criteria:
+
+- The template is not a direct copy of an existing template, be creative create your own design ;)
+- The template must not contain vulgar words, images, or any other similar content
+- The template must not promote people, government, political parties, or any other organization
+
+Technical criteria:
+
+- The `index.html` must have a `title` and `meta description` tag
+- The `title` tag should be `<name of template> a Freefolio template by OSSPH`
+- You can use any CSS framework like bootstrap, tailwind, etc. As long as they are imported via CDN
+- Your template must be static, meaning no dynamic data from outside the code is required for it to work
+- Do not use excessively large images, you can compress your assets using https://tinypng.com/ 
+
+And most importantly:
+
+- Have fun! <3
+
+**6.** Add those changes to the branch you just created using the git add command. To let Git track files for a commit, we need to run the following in the terminal:
 
 ```bash
 git add my_new_file
@@ -65,21 +85,21 @@ git add .
 git status
 ```
 
-**6.** Now commit those changes using the git commit command:
+**7.** Now commit those changes using the git commit command:
 
 ```bash
 git commit -m "<your_commit_message>"
 ```
 
-**7.** Push your local commits to the remote repository:
+**8.** Push your local commits to the remote repository:
 
 ```bash
 git push origin YourBranchName
 ```
 
-**8.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
+**9.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**9.** **Congratulations!** You've made your first contribution to [**Freefolio**](https://github.com/OSSPhilippines/freefolio)! 🙌🏼
+**10.** **Congratulations!** You've made your first contribution to [**Freefolio**](https://github.com/OSSPhilippines/freefolio)! 🙌🏼
 
 **_:trophy: After this, the maintainers will review the PR and will merge it if it helps move the freefolio project forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
 
