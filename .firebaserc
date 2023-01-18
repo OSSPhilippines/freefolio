@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ossph-org"
+  },
+  "targets": {
+    "ossph-org": {
+      "hosting": {
+        "production": [
+          "freefolio"
+        ]
+      }
+    }
+  }
+}
