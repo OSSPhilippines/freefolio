@@ -3,7 +3,7 @@
 
 name: Deploy to Firebase Hosting on PR
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - main
     types:
