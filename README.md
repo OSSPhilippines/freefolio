@@ -54,11 +54,16 @@ A collection of **100% FREE** to use portfolio website templates.
 <h3><a href="https://ossphilippines.github.io/freefolio/simple">Simple</a></h3>
 <img src="./images/simple.PNG" alt="simple-screenshot"/>
 
+## 😤 I own the content in your templates
+
+If any of the content from our collection is own by you or your organization and it has no proper attribution to the owner, please send us an email at opensourcesoftwareph@gmail.com. This happens sometimes and we apologize if we overlooked it. 
+
 ## 🎯 Contributing
 
 Please read the project's [contributing guide](./CONTRIBUTING.md) for the process for submitting pull requests to us.
 
 ## 📋 Code of Conduct
+
 This project and everyone participating in it are governed by the [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you agree to abide by this code of conduct.
 
 ## 📃 License
