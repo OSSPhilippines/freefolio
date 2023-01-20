@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap');
+
+:root {
+    --primary-color: #7868E6;
+    --secondary-color: green;
+    --bg-color: #EDEEF7;
+    --text-color: #171e29;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+hr {
+    border-color: var(--primary-color);
+    opacity: .2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title h1 {
+    font-size: 28px;
+}
+
+.social-links ul {
+    display: flex;
+}
+
+.social-links ul li {
+    margin: 0 .66rem;
+}
+
+.hero {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+    min-height: 100vh;
+}
+
+.hero-info {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero-info h1 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.hero-info h1 span {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: .022rem;
+    margin-bottom: 1rem;
+}
+
+.hero-info h2 {
+    padding: 0 0 2rem 0;
+    font-size: 24px;
+    opacity: .7;
+}
+
+.hero-info p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.hero .hero-image {
+    width: 256px;
+}
+
+.hero .hero-image .images {
+    width: 256px;
+}
+
+.skills {
+    padding: 6rem 1rem;
+    display: grid;
+    gap: 2em;
+}
+
+.skills-card {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.skills-card h2 {
+    font-size: 36px;
+    margin-bottom: .13em;
+}
+
+.skills-card p {
+    font-size: 14px;
+    opacity: .8;
+}
+
+.projects-info {
+    margin: 1.5em 0;
+    min-height: 100vh;
+    padding: 0 1rem;
+}
+
+.projects-info h1 {
+    margin: 1.5em 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.projects-cards {
+    display: grid;
+    gap: 2em;
+}
+
+.project-card-info h2 {
+    font-size: 24px;
+    margin: 1rem;
+}
+
+.project-card-info ul {
+    display: flex;
+}
+
+.project-card-info ul li:first-child {
+    margin: 0 0 0 1rem;
+}
+
+.project-card-info ul li {
+    text-transform: uppercase;
+    margin: 0 1rem;
+    font-size: 16px;
+    opacity: .8;
+}
+
+.project-card-info .card-info {
+    width: 100%;
+}
+
+.project-card-info img {
+    object-fit: fill;
+    width: 50%;
+    height: 75%;
+}
+
+.button {
+    align-items: center;
+    background-color: none;
+    border: 2px solid var(--primary-color);
+    box-sizing: border-box;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: inline-flex;
+    fill: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:focus {
+    color: #171e29;
+}
+
+.button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+.button:active {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--text-color);
+    text-align: center;
+    height: 64px;
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    header {
+        padding: 2rem 3rem;
+    }
+
+    .social-links ul li {
+        margin: 0 2rem;
+    }
+
+    .social-links ul li {
+        margin: 0 1rem;
+    }
+
+    main {
+        padding: 0 3rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-info {
+        text-align: left;
+    }
+
+    .hero-info h1 {
+        font-size: 50px;
+    }
+
+    .hero .hero-info {
+        order: 1;
+    }
+
+    .hero .hero-image {
+        order: 2;
+    }
+
+    .hero .hero-image {
+        width: 480px;
+    }
+
+    .hero .hero-image .images {
+        width: 480px;
+    }
+
+    .button {
+        min-width: 170px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .skills-card {
+        text-align: start;
+    }
+
+    .projects-info h1 {
+        text-align: start;
+    }
+
+    .projects-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1025px) {
+    header {
+        padding: 2rem 6rem;
+    }
+
+    .social-links ul li {
+        margin: 0 2rem;
+    }
+
+    main {
+        padding: 0 6rem;
+    }
+
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-info {
+        text-align: left;
+        max-width: 640px;
+    }
+
+    .hero-info h1 {
+        font-size: 60px;
+        margin-bottom: 1rem;
+        font-weight: 900;
+    }
+
+    .hero-info h2 {
+        font-size: 32px;
+        margin-bottom: 1rem;
+    }
+
+    .hero-info p {
+        text-align: justify;
+    }
+
+    .hero .hero-image {
+        width: 600px;
+    }
+
+    .hero .hero-image .images {
+        width: 600px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .skills-card {
+        text-align: start;
+    }
+
+    .projects-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .projects-info h1 {
+        text-align: start;
+    }
+}
