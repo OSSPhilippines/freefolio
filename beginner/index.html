@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freefolio beginner template">
     <title>Beginner a Freefolio template by OSSPH</title>
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="reset.css">
@@ -11,10 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <!-- This is the header section of the page. It contains the navigation bar and the hamburger menu. -->
     <header>
         <nav class="navbar">
-            <a href="#" class="navbar-branding"><img class="logo" src="assets/logoipsum-245.svg">Logo</a>
+            <a href="#" class="navbar-branding"><img class="logo" src="assets/logoipsum-245.svg" alt="beginner logo">Logo</a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#hero__section" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#project__section" class="nav-link">Projects</a></li>
@@ -29,7 +29,6 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            <!-- The hamburger menu icon. -->
                 <div class="icon nav-icon-6">
                     <span></span>   
                     <span></span>
@@ -39,13 +38,12 @@
         </nav>
     </header>
 
-    <!-- This is the main content of the page. -->
     <main>
         <section class="hero" id="hero__section">
             <article class="left-hero">
                 <p class="txt__upper">Hello 👋 I'm,</p>
                 <h1 class="txt">John Doe</span></h1>
-                <h3 class="txt__under">Software Engineer. 💻</h3>
+                <h2 class="txt__under">Software Engineer. 💻</h2>
                 <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, temporibus.</p>
                 <div class="soclinks">
                     <button class="btn" type="button">Contact Me!</button>
@@ -56,7 +54,7 @@
             </div>
         </section>
         <section class="projects" id="project__section">
-            <h2 class="project-heading">Projects</h2>
+            <h3 class="project-heading">Projects</h3>
             <div class="cards">
                 <div class="card">
                     <div class="card__cover">
@@ -118,18 +116,14 @@
         </section>
     </main>
 
-    <!-- This is the footer section of the page. It contains the copyright information. -->
     <footer class="ftr">
         <div>Made with ❤️ by @mpotane</div>
     </footer>
 
-    <!-- main javascript -->
     <script src="index.js"></script>
     
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-   <!-- Initialize Swiper -->
    <script>
     const swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,

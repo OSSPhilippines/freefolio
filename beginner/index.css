@@ -114,7 +114,6 @@ li {
 
 section {
     min-height: 100vh;
-    height: auto;
 }
 
 /* Setting the background of the hero section to a gradient. */
@@ -149,6 +148,7 @@ section {
 .txt__under {
     font-weight: 700;
     color: rgb(83, 81, 81);
+    font-size: 1.3rem;
 }
 
 .desc {
@@ -311,7 +311,7 @@ figcaption {
 
 .ftr {
     background-color: #262626;
-    min-height: 15vh;
+    min-height: 10vh;
     display: grid;
     place-items: center;
     color: rgb(229, 229, 229);
