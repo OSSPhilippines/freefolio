@@ -1,4 +1,5 @@
 # Free Portfolio Website Templates
+
 <p>
   <a href="https://github.com/OSSPhilippines/freefolio/blob/main/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" height="20" alt="PRs Welcome"> 
@@ -30,33 +31,33 @@ A collection of **100% FREE** to use portfolio website templates.
 
 ## 🎨 Templates
 
-<h3><a href="https://ossphilippines.github.io/freefolio/hacker">Hacker</a></h3>
+<h3><a href="https://freefolio.web.app/hacker">Hacker</a></h3>
 <img src="./images/hacker.png" alt="hacker-screenshot"/>
 
-<h3><a href="https://ossphilippines.github.io/freefolio/indify">Indify</a></h3>
+<h3><a href="https://freefolio.web.app/indify">Indify</a></h3>
 <img src="./images/indify.png" alt="indify-screenshot"/>
 
-<h3><a href="https://ossphilippines.github.io/freefolio/plain">Plain</a></h3>
+<h3><a href="https://freefolio.web.app/plain">Plain</a></h3>
 <img src="./images/plain.png" alt="plain-screenshot"/>
   
-<h3><a href="https://ossphilippines.github.io/freefolio/beginner">Beginner</a></h3>
+<h3><a href="https://freefolio.web.app/beginner">Beginner</a></h3>
 <img src="./images/beginner.png" alt="beginner-screenshot"/>
 
-<h3><a href="https://ossphilippines.github.io/freefolio/outlines">Outlines</a></h3>
+<h3><a href="https://freefolio.web.app/outlines">Outlines</a></h3>
 <img src="./images/outlines.png" alt="outlines-screenshot"/>
 
-<h3><a href="https://ossphilippines.github.io/freefolio/clean">Clean</a></h3>
+<h3><a href="https://freefolio.web.app/clean">Clean</a></h3>
 <img src="./images/clean.png" alt="clean-screenshot"/>
 
-<h3><a href="https://ossphilippines.github.io/freefolio/deepsea">Deep Sea</a></h3>
+<h3><a href="https://freefolio.web.app/deepsea">Deep Sea</a></h3>
 <img src="./images/deepsea.png" alt="deepsea-screenshot"/>
 
-<h3><a href="https://ossphilippines.github.io/freefolio/simple">Simple</a></h3>
+<h3><a href="https://freefolio.web.app/simple">Simple</a></h3>
 <img src="./images/simple.PNG" alt="simple-screenshot"/>
 
 ## 😤 I own the content in your templates
 
-If any of the content from our collection is own by you or your organization and it has no proper attribution to the owner, please send us an email at opensourcesoftwareph@gmail.com. This happens sometimes and we apologize if we overlooked it. 
+If any of the content from our collection is own by you or your organization and it has no proper attribution to the owner, please send us an email at opensourcesoftwareph@gmail.com. This happens sometimes and we apologize if we overlooked it.
 
 ## 🎯 Contributing
 
