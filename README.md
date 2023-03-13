@@ -31,28 +31,28 @@ A collection of **100% FREE** to use portfolio website templates.
 
 ## 🎨 Templates
 
-<h3><a href="https://freefolio.web.app/hacker">Hacker</a></h3>
+<h3><a href="https://freefolio.web.app/hacker" target="_blank">Hacker</a></h3>
 <img src="./images/hacker.png" alt="hacker-screenshot"/>
 
-<h3><a href="https://freefolio.web.app/indify">Indify</a></h3>
+<h3><a href="https://freefolio.web.app/indify" target="_blank">Indify</a></h3>
 <img src="./images/indify.png" alt="indify-screenshot"/>
 
-<h3><a href="https://freefolio.web.app/plain">Plain</a></h3>
+<h3><a href="https://freefolio.web.app/plain" target="_blank">Plain</a></h3>
 <img src="./images/plain.png" alt="plain-screenshot"/>
   
-<h3><a href="https://freefolio.web.app/beginner">Beginner</a></h3>
+<h3><a href="https://freefolio.web.app/beginner" target="_blank">Beginner</a></h3>
 <img src="./images/beginner.png" alt="beginner-screenshot"/>
 
-<h3><a href="https://freefolio.web.app/outlines">Outlines</a></h3>
+<h3><a href="https://freefolio.web.app/outlines" target="_blank">Outlines</a></h3>
 <img src="./images/outlines.png" alt="outlines-screenshot"/>
 
-<h3><a href="https://freefolio.web.app/clean">Clean</a></h3>
+<h3><a href="https://freefolio.web.app/clean" target="_blank">Clean</a></h3>
 <img src="./images/clean.png" alt="clean-screenshot"/>
 
-<h3><a href="https://freefolio.web.app/deepsea">Deep Sea</a></h3>
+<h3><a href="https://freefolio.web.app/deepsea" target="_blank">Deep Sea</a></h3>
 <img src="./images/deepsea.png" alt="deepsea-screenshot"/>
 
-<h3><a href="https://freefolio.web.app/simple">Simple</a></h3>
+<h3><a href="https://freefolio.web.app/simple" target="_blank">Simple</a></h3>
 <img src="./images/simple.PNG" alt="simple-screenshot"/>
 
 ## 😤 I own the content in your templates
