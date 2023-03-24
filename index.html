@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freefolio by OSSPH</title>
     <link rel="shortcut icon" href="./clean/img/logo.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -27,42 +28,42 @@
 
 
 
-        <a href="hacker" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="hacker" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
           <img src="./images/hacker.png" alt="Hacker folio" class="rounded-md shadow">
           <h2 class="text-3xl font-bold mt-2">Hacker</h2>
         </a>
 
-        <a href="indify" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="indify" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
           <img src="./images/indify.png" alt="Indify folio" class="rounded-md shadow">
           <h2 class="text-3xl font-bold mt-2">Indify</h2>
         </a>
 
-        <a href="plain" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="plain" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
           <img src="./images/plain.png" alt="Plain folio" class="rounded-md shadow">
           <h2 class="text-3xl font-bold mt-2">Plain</h2>
         </a>
 
-        <a href="clean" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="clean" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
           <img src="./images/clean.png" alt="Clean folio" class="rounded-md shadow">
           <h2 class="text-3xl font-bold mt-2">Clean</h2>
         </a>
 
-        <a href="beginner" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="beginner" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
             <img src="./images/beginner.png" alt="Beginner folio" class="rounded-md shadow">
             <h2 class="text-3xl font-bold mt-2">Beginner</h2>
         </a>
 
-        <a href="outlines" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="outlines" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
           <img src="./images/outlines.png" alt="Outlines folio" class="rounded-md shadow">
           <h2 class="text-3xl font-bold mt-2">Outlines</h2>
         </a>
 
-        <a href="simple" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="simple" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
           <img src="./images/simple.PNG" alt="Simple folio" class="rounded-md shadow">
           <h2 class="text-3xl font-bold mt-2">Simple</h2>
         </a>
 
-        <a href="deepsea" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank">
+        <a href="deepsea" class="relative bottom-0 hover:bottom-2 transition-all" target="_blank" data-aos="fade-up">
           <img src="./images/deepsea.png" alt="Deepsea folio" class="rounded-md shadow">
           <h2 class="text-3xl font-bold mt-2">Deep Sea</h2>
         </a>
@@ -73,7 +74,13 @@
     </main>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        delay: 0
+      });
+    </script>
   </body>
 
 </html>
