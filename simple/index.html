@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -127,7 +128,7 @@
         <!--Content-->
 
         <!--Hero Section-->
-        <section class="Hero">
+        <section class="Hero" data-aos="fade-up">
             <h1>I am a Full Stack <span>Web Applicaction</span> Developer</h1>
             <p>
                 I bring your Ideas to life using top-notch skills with more than 2 years of experience!
@@ -141,7 +142,7 @@
 
 
         <!--Illsutration-->
-        <section class="illustration">
+        <section class="illustration" data-aos="fade-up">
             <img src="./pictures/illustration.svg" alt="">
         </section>
 
@@ -179,6 +180,14 @@
     <footer>
 
     </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>       
+        AOS.init({
+            once: true,
+            delay: 0
+        });
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="script.js" defer></script>
     <title>Outlines a Freefolio template by OSSPH</title>
@@ -42,18 +43,18 @@
     <main>
       <section id="hero">
         <div class="hero-container">
-          <div class="hero-text-container">
+          <div class="hero-text-container" data-aos="fade-up">
             <p>Hey there,</p>
             <h2>I am John Doe</h2>
             <p>a software developer.</p>
           </div>
-          <a href="#contact" class="hero-button">Let's connect!</a>
+          <a href="#contact" class="hero-button" data-aos="fade-up">Let's connect!</a>
         </div>
       </section>
 
       <section id="about">
-        <div class="section-highlight">ABOUT</div>
-        <div class="about-container">
+        <div class="section-highlight" data-aos="fade-up">ABOUT</div>
+        <div class="about-container" data-aos="fade-up">
           <div class="about-card">
             <section class="about-content">
               <h2>> About</h2>
@@ -90,8 +91,8 @@
       </section>
 
       <section id="portfolio">
-        <div class="section-highlight">Portfolio</div>
-        <div class="portfolio-container">
+        <div class="section-highlight" data-aos="fade-up">Portfolio</div>
+        <div class="portfolio-container" data-aos="fade-up">
           <div class="portfolio-card">
             <div class="portfolio-content">
               <h2>> Portfolio</h2>
@@ -201,8 +202,8 @@
       </section>
 
       <section id="contact">
-        <h2 class="section-highlight">Contacts</h2>
-        <div class="contact-container">
+        <h2 class="section-highlight" data-aos="fade-up">Contacts</h2>
+        <div class="contact-container" data-aos="fade-up">
           <div class="contact-card">
             <h2>> Contacts</h2>
             <p>You can contact directly me through these following links</p>
@@ -237,5 +238,13 @@
         <a href="https://github.com/chaaals" target="_blank">Charles Ching</a>
       </div>
     </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>       
+      AOS.init({
+        once: true,
+        delay: 0
+      });
+    </script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='apple-touch-icon' href='/logo.png'>
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +47,7 @@
 
     <main>
         <section id="hero">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-up">
                 <p class="greet-text">Hi there! I am</p>
                 <p class="text-gradient name-text">Juan.</p>
                 <p class="job-text">Web Developer.</p>
@@ -56,14 +57,14 @@
                 </p>
                 <a href="#contact" class="contact-button">Contact Me</a>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-up">
                 <img class="hero-image" src="assets/hero.png" width="512" alt="Hero Image" />
             </div>
         </section>
 
         <section id="about">
-            <h2 class="text-gradient">About</h2>
-            <div>
+            <h2 class="text-gradient" data-aos="fade-up">About</h2>
+            <div data-aos="fade-up">
                 <div>
                     <img src="assets/logo.png" width="128" height="128" alt="Person Image" />
                 </div>
@@ -85,10 +86,10 @@
         </section>
 
         <section id="portfolio">
-            <h2 class="text-gradient">Portfolio</h2>
+            <h2 class="text-gradient" data-aos="fade-up">Portfolio</h2>
             <div>
                 <ul>
-                    <li>
+                    <li data-aos="fade-up">
                         <h3 class="port-title-text">Project 1</h3>
                         <p class="port-title-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Corporis vitae, autem mollitia veritatis nihil officiis enim obcaecati voluptatem maxime,
@@ -98,7 +99,7 @@
                             <li>Django</li>
                         </ul>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                         <h3 class="port-title-text">Project 2</h3>
                         <p class="port-title-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Corporis vitae, autem mollitia veritatis nihil officiis enim obcaecati voluptatem maxime,
@@ -109,7 +110,7 @@
                             <li>JS</li>
                         </ul>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                         <h3 class="port-title-text">Project 3</h3>
                         <p class="port-title-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Corporis vitae, autem mollitia veritatis nihil officiis enim obcaecati voluptatem maxime,
@@ -126,27 +127,27 @@
         </section>
 
         <section id="contact">
-            <h2 class="text-gradient">Contact</h2>
+            <h2 class="text-gradient" data-aos="fade-up">Contact</h2>
             <ul>
-                <li>
+                <li data-aos="fade-up">
                     <a href="facebook" target="_blank">
                         <img class="fb-icon" src="assets/contact/fb.svg" alt="Facebook icon" />
                     </a>
                     <p>Facebook</p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <a href="linkedin" target="_blank">
                         <img class="li-icon" src="assets/contact/linkedin.svg" alt="Linkedin icon" />
                     </a>
                     <p>LinkedIn</p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <a href="github" target="_blank">
                         <img class="gh-icon" src="assets/contact/github.svg" alt="Github icon" />
                     </a>
                     <p>Github</p>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <a href="mailto:youremail@gmail.com" target="_blank">
                         <img class="gmail-icon" src="assets/contact/gmail.svg" alt="Gmail icon" />
                     </a>
@@ -160,6 +161,14 @@
         <p>Template made by Rane G</p>
         <p>2022</p>
     </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>       
+        AOS.init({
+            once: true,
+            delay: 0
+        });
+    </script>
 
 </body>
 

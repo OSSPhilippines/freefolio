@@ -20,6 +20,8 @@
     />
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   </head>
   <body>
@@ -51,29 +53,29 @@
     </header>
     <!-- Home -->
     <section class="home" id="home">
-      <div class="home__container bd-container bd-grid">
-        <div class="home__data">
-          <div class="home__greeting">
+      <div class="home__container bd-container bd-grid" >
+        <div class="home__data" >
+          <div class="home__greeting" data-aos="fade-up">
             <span>HELLO,</span>
           </div>
-          <div class="home__title">
+          <div class="home__title" data-aos="fade-up">
             <h1>I'm John Doe</h1>
           </div>
-          <div class="home__career">
+          <div class="home__career" data-aos="fade-up">
             <p>Front-end Developer</p>
           </div>
-          <div class="home__description">
+          <div class="home__description" data-aos="fade-up">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum libero, esse optio totam mollitia, atque nesciunt magnam eius sit ex repellendus maxime asperiores. In aspernatur sed impedit quam non.
             </p>
           </div>
           <div class="home__button">
-            <button class="home__hire">HIRE ME</button>
+            <button class="home__hire" data-aos="fade-up">HIRE ME</button>
             <a href="#" download="">
-              <button class="home__download">DOWNLOAD CV</button>
+              <button class="home__download" data-aos="fade-up">DOWNLOAD CV</button>
             </a>
           </div>
-          <div class="home__social">
+          <div class="home__social" data-aos="fade-up">
             <a
               href="#"
               class="home__icon"
@@ -99,7 +101,7 @@
               ><i class="fab fa-discord"></i
             ></a>
           </div>
-          <div class="home__img">
+          <div class="home__img" data-aos="fade-up">
             <img src="./assets/img/main-image.svg" alt="" class="home-image" />
           </div>
         </div>
@@ -108,12 +110,12 @@
 
     <!-- Services -->
     <section class="services" id="services">
-      <h2 class="section-title">SERVICES</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title" data-aos="fade-up">SERVICES</h2>
+      <p class="section-subtitle" data-aos="fade-up">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit facere doloremque perspiciatis! In, corporis?
       </p>
       <div class="services__container bd-container bd-grid">
-        <div class="services__data">
+        <div class="services__data" data-aos="fade-up">
           <div class="services__img">
             <img src="./assets/img/web-design.svg" alt="" />
           </div>
@@ -123,7 +125,7 @@
           </p>
         </div>
 
-        <div class="services__data">
+        <div class="services__data" data-aos="fade-up">
           <div class="services__img">
             <img src="./assets/img/web-development.svg" alt="" />
           </div>
@@ -133,7 +135,7 @@
           </p>
         </div>
 
-        <div class="services__data">
+        <div class="services__data" data-aos="fade-up">
           <div class="services__img">
             <img src="./assets/img/graphics-design.svg" alt="" />
           </div>
@@ -143,7 +145,7 @@
           </p>
         </div>
 
-        <div class="services__data">
+        <div class="services__data" data-aos="fade-up">
           <div class="services__img">
             <img src="./assets/img/soft-skills.svg" alt="" />
           </div>
@@ -156,11 +158,11 @@
     </section>
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
-      <h2 class="section-title">PORTFOLIO</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title" data-aos="fade-up">PORTFOLIO</h2>
+      <p class="section-subtitle" data-aos="fade-up">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, labore.
       </p>
-      <div class="portfolio__container bd-container bd-grid swiper">
+      <div class="portfolio__container bd-container bd-grid swiper" data-aos="fade-up">
         <div class="swiper-wrapper">
           <div class="portfolio__data swiper-slide">
             <h3 class="portfolio__title">Project Name</h3>
@@ -218,5 +220,13 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- JS script -->
     <script src="./assets/js/script.js"></script>
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>       
+      AOS.init({
+        once: true,
+        delay: 0
+      });
+    </script>
   </body>
 </html>

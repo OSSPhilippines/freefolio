@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -40,7 +41,7 @@
 
     <main>
         <section class="hero" id="hero__section">
-            <article class="left-hero">
+            <article class="left-hero" data-aos="fade-up">
                 <p class="txt__upper">Hello 👋 I'm,</p>
                 <h1 class="txt">John Doe</span></h1>
                 <h2 class="txt__under">Software Engineer. 💻</h2>
@@ -49,14 +50,14 @@
                     <button class="btn" type="button">Contact Me!</button>
                 </div>
             </article>
-            <div class="right-hero">
+            <div class="right-hero" data-aos="fade-up">
                 <img id="hero__img" src="assets/undraw_developer_activity_re_39tg.svg" alt="right-hero">
             </div>
         </section>
         <section class="projects" id="project__section">
-            <h3 class="project-heading">Projects</h3>
+            <h3 class="project-heading" data-aos="fade-up">Projects</h3>
             <div class="cards">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card__cover">
                         <img src="https://picsum.photos/290/150" alt="Avatar">
                     </div>
@@ -66,7 +67,7 @@
                         <button class="cardBtn" type="button">Link here --></button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card__cover">
                         <img src="https://picsum.photos/290/150" alt="Avatar">
                     </div>
@@ -76,7 +77,7 @@
                         <button class="cardBtn" type="button">Link here --></button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card__cover">
                         <img src="https://picsum.photos/290/150" alt="Avatar">
                     </div>
@@ -89,7 +90,7 @@
             </div>
         </section>
         <section class="testimony" id="testimonial__section">
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper" data-aos="fade-up">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <figure class="fig">
@@ -123,21 +124,26 @@
     <script src="index.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-   <script>
-    const swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+        
+        AOS.init({
+            once: true,
+            delay: 0
+        });
+    </script>
+  
 </body>
 </html>
