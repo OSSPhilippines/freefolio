@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <title>Hacker | Free Professional Portfolio Website Templates by Joff Tiquez</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
     <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       #app {
         background-color: black;
@@ -55,7 +56,7 @@
       <v-app>
         <header class="container" v-bind="sectionHeight">
           <v-row align="center">
-            <v-col cols="12" md="6">
+            <v-col cols="12" md="6" data-aos="fade-up">
               <h1 class="display-4 primary--text">{{name}}</h1>
               <h2 class="primary--text">{{jobTitle}}</h2>
               <p>{{jobDescription}}</p>
@@ -71,10 +72,10 @@
         <main class="container">
           <section class="row mb-5" id="skills">
             <v-col cols="12" md="6">
-              <h1 class="primary--text">/Skills</h1>
+              <h1 class="primary--text" data-aos="fade-up">/Skills</h1>
             </v-col>
             <v-col v-for="(skill, index) in skills" cols="12" :key="index">
-              <v-card hover="hover" height="100%">
+              <v-card hover="hover" height="100%" data-aos="fade-up">
                 <v-card-text>
                   <h2 class="primary--text">>
                     {{skill.name}}</h2>
@@ -90,10 +91,10 @@
           </section>
           <section class="row mb-5" id="works">
             <v-col cols="12" md="6">
-              <h1 class="primary--text">/Recent Works</h1>
+              <h1 class="primary--text" data-aos="fade-up">/Recent Works</h1>
             </v-col>
             <v-col v-for="(work, index) in works" cols="12" :key="index">
-              <v-card hover="hover" height="100%">
+              <v-card hover="hover" height="100%" data-aos="fade-up">
                 <v-card-text>
                   <h2 class="primary--text">>
                     {{work.name}}</h2>
@@ -109,10 +110,10 @@
           </section>
           <section class="row mb-5" id="hobbies">
             <v-col cols="12" md="6">
-              <h1 class="primary--text">/My Hobbies</h1>
+              <h1 class="primary--text" data-aos="fade-up">/My Hobbies</h1>
             </v-col>
             <v-col v-for="(hobby, index) in hobbies" cols="12" :key="index">
-              <v-card hover="hover" height="100%">
+              <v-card hover="hover" height="100%" data-aos="fade-up">
                 <v-card-text>
                   <h2 class="primary--text">>
                     {{hobby.name}}</h2>
@@ -128,16 +129,16 @@
           </section>
           <section class="row justify-center" id="contact">
             <v-col cols="12" md="10" class="text-center">
-              <h1 class="primary--text">/Let's Talk!</h1>
+              <h1 class="primary--text" data-aos="fade-up">/Let's Talk!</h1>
             </v-col>
             <v-col cols="12" sm="6" md="4" class="text-center">
               <v-row>
-                <v-col class="text-center" cols="12">
+                <v-col class="text-center" cols="12" data-aos="fade-up">
                   <h3 v-if="contacts && contacts.email">{{contacts.email}}</h3>
                   <h3 v-if="contacts && contacts.mobileNo">{{contacts.mobileNo}}</h3>
                   <h3 v-if="contacts && contacts.phoneNo">{{contacts.phoneNo}}</h3>
                 </v-col>
-                <v-col class="text-center" cols="12">
+                <v-col class="text-center" cols="12" data-aos="fade-up">
                   <v-btn class="ma-1" v-for="(link, index) in contactLinks" outlined="outlined" rounded="rounded" target="_blank" :href="link.link" :key="index" color="primary">
                     {{link.name}}
                   </v-btn>
@@ -160,6 +161,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script src="config.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       var vm = new Vue({
         el: '#app',
@@ -199,6 +201,11 @@
             return [];
           }
         }
+      });
+      
+      AOS.init({
+        once: true,
+        delay: 0
       });
     </script>
   </body>

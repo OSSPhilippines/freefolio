@@ -10,19 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
     <div class="container">
       <header>
-        <a href="#"><img src="./img/logo.svg" alt="logo" /></a>
+        <a href="#" data-aos="fade-up"><img src="./img/logo.svg" alt="logo" /></a>
       </header>
       <main class="content">
-        <h1><strong>Hello, I'm Lynda.</strong> I'm a creative producer.</h1>
-        <h3>Also, I do jokes on Twitter</h3>
+        <h1 data-aos="fade-up"><strong>Hello, I'm Lynda.</strong> I'm a creative producer.</h1>
+        <h3 data-aos="fade-up">Also, I do jokes on Twitter</h3>
         <nav>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
+          <a href="#" data-aos="fade-up">Portfolio</a>
+          <a href="#" data-aos="fade-up">Contact</a>
         </nav>
       </main>
       <footer>
@@ -33,5 +34,13 @@
         </div>
       </footer>
     </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>       
+      AOS.init({
+          once: true,
+          delay: 0
+      });
+    </script>
   </body>
 </html>
