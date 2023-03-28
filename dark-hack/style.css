@@ -47,4 +47,7 @@ table {
     border-spacing: 0;
 }
 
-
+/* Author */
+body{
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
