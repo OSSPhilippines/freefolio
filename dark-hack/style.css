@@ -89,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 7rem;
+    padding-bottom: 7rem;
 }
 .section:last-of-type{
     margin-bottom: 0;
@@ -107,7 +107,6 @@ body {
     width: 125%;
     transform: translateX(-50%);
     border-bottom: 3px dashed #00FF94;
-
 }
 
 /*
@@ -597,11 +596,6 @@ body {
     .container {
         max-width: 760px;
     }
-    .header__right{
-        width: 500px;
-        opacity: 1;
-        top: 35px;
-    }
     .service-cards{
         flex-direction: row;
         flex-wrap: wrap;
@@ -644,6 +638,19 @@ body {
         max-width: 450px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/*
+ * ======================================
+ * Large Screen Extended -- 1000px
+ * ======================================
+ */
+@media only screen and (min-width: 62.5em) {
+    .header__right{
+        width: 500px;
+        opacity: 1;
+        top: 35px;
     }
 }
 
