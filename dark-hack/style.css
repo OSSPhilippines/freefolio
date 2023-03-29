@@ -456,6 +456,9 @@ body {
     .container {
         max-width: 960px;
     }
+    .section__title{
+        font-size: 8rem;
+    }
 }
 
 /*
