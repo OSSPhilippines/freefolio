@@ -55,6 +55,11 @@ A collection of **100% FREE** to use portfolio website templates.
 <h3><a href="https://freefolio.web.app/simple" target="_blank">Simple</a></h3>
 <img src="./images/simple.PNG" alt="simple-screenshot"/>
 
+<h3><a href="https://freefolio.web.app/dark-hack" target="_blank">Dark Hack</a></h3>
+<img src="./images/dark-hack.png" alt="simple-screenshot"/>
+
+
+
 ## 😤 I own the content in your templates
 
 If any of the content from our collection is own by you or your organization and it has no proper attribution to the owner, please send us an email at opensourcesoftwareph@gmail.com. This happens sometimes and we apologize if we overlooked it.
