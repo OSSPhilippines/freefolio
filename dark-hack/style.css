@@ -23,31 +23,186 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-/* Author */
-body{
+/*
+ * ==================
+ * Start Here
+ * ==================
+ */
+html {
+    font-size: 62.5%; /* 10px of 16px */
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    background-color: #111111;
+    position: relative;
+    height: 100%;
+    font-size: 1.6rem; /* 16px */
     font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+/*
+ * ==================
+ * Components
+ * ==================
+ */
+.nav {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.nav__list{
+    display: none;
+}
+.nav__list-item {
+    margin-right: 2rem;
+}
+.nav__list-item:last-of-type {
+    margin-right: 0;
+}
+
+.nav__list-link {
+    color: #688277;
+    position: relative;
+    font-weight: 800;
+    text-decoration: none;
+    outline: none;
+}
+
+.nav__list-link::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 99rem;
+    background-color: #59FFB9;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .15s ease-in-out;
+}
+
+.nav__list-link:focus,
+.nav__list-link:hover {
+    color: #59FFB9;
+}
+
+.nav__list-link:focus::before,
+.nav__list-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav__list-link.active {
+    color: #59FFB9;
+}
+
+.nav__list-link.active:focus {
+    color: #93ffd0;
+}
+
+.nav__list-link.active:focus::before {
+    background-color: #93ffd0;
+}
+
+.nav__list-link.active::before {
+    transform: scaleX(1);
+}
+
+
+/*
+ * ========================
+ * Small Screen -- 576px
+ * ========================
+ */
+@media only screen and (min-width: 36em) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/*
+ * ========================
+ * Medium Screen -- 768px
+ * ========================
+ */
+@media only screen and (min-width: 48em) {
+    .container {
+        max-width: 720px;
+    }
+    .nav__list {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/*
+ * ========================
+ * Large Screen -- 992px
+ * ========================
+ */
+@media only screen and (min-width: 62em) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/*
+ * ========================
+ * XLarge Screen -- 1200px
+ * ========================
+ */
+@media only screen and (min-width: 75em) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*
+ * ========================
+ * XXLarge Screen -- 1400px
+ * ========================
+ */
+@media only screen and (min-width: 87.5em) {
+    .container {
+        max-width: 1320px;
+    }
 }
