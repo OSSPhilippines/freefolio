@@ -9,28 +9,55 @@
 
     <!-- CSS & JS -->
     <link rel="stylesheet" href="./style.css"/>
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <title>Dark Hack</title>
 </head>
 <body>
-<nav class="nav container">
-    <ul class="nav__list">
-        <li class="nav__list-item">
-            <a class="nav__list-link active" href="#Home">&lt;Home &sol;&gt;</a>
-        </li>
-        <li class="nav__list-item">
-            <a class="nav__list-link" href="#Services">&lt;Services &sol;&gt;</a>
-        </li>
-        <li class="nav__list-item">
-            <a class="nav__list-link" href="#Works">&lt;Works &sol;&gt;</a>
-        </li>
-        <li class="nav__list-item">
-            <a class="nav__list-link" href="#Contact">&lt;Contact &sol;&gt;</a>
-        </li>
-    </ul>
-</nav>
+<main>
+    <header id="heroHeader" class="hero-header">
+        <nav id="navBar" class="nav">
+            <div class="container">
+                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+                    <span class="nav__hamburger-top"></span>
+                    <span class="nav__hamburger-center"></span>
+                    <span class="nav__hamburger-bottom"></span>
+                </button>
+                <ul id="navList" class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__list-link active" href="#Home">&lt;Home &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#Services">&lt;Services &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#Works">&lt;Works &sol;&gt;</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-link" href="#Contact">&lt;Contact &sol;&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="header__container container">
+            <div class="header__left">
+                <span class="header__sup-text">Hello There! I am a</span>
+                <h1 class="header__title">
+                    <span class="header__title-1" data-role="WEB">Web</span>
+                    <span class="header__title-2" data-role="DEVELOPER">Developer</span>
+                </h1>
+                <p class="header__msg">As a front-end web developer, my passion lies in creating beautiful and intuitive
+                    user experiences through the use of clean and efficient code.</p>
+                <a href="#" class="header__resume">Resume</a>
+            </div>
+            <div class="header__right">
+                <img src="./assets/illustrations/header.svg" alt="Header section illustration"/>
+            </div>
+        </section>
+        <span class="header__bg"></span>
+    </header>
+</main>
 </body>
 </html>

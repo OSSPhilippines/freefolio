@@ -65,9 +65,11 @@ html {
 }
 
 body {
+    color: white;
     background-color: #111111;
     position: relative;
     height: 100%;
+    line-height: 1.5;
     font-size: 1.6rem; /* 16px */
     font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -76,36 +78,43 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 90%;
 }
 
 /*
  * ==================
- * Components
+ * Navbar Component
  * ==================
  */
 .nav {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    backdrop-filter: blur(25px);
 }
 .nav__list{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0;
+    overflow-y: scroll;
 }
 .nav__list-item {
-    margin-right: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
 }
-.nav__list-item:last-of-type {
-    margin-right: 0;
-}
-
 .nav__list-link {
     color: #688277;
     position: relative;
     font-weight: 800;
     text-decoration: none;
     outline: none;
+    font-size: 2rem;
 }
-
 .nav__list-link::before {
     content: '';
     display: block;
@@ -120,33 +129,178 @@ body {
     transform: scaleX(0);
     transition: transform .15s ease-in-out;
 }
-
 .nav__list-link:focus,
 .nav__list-link:hover {
     color: #59FFB9;
 }
-
 .nav__list-link:focus::before,
 .nav__list-link:hover::before {
     transform: scaleX(1);
 }
-
 .nav__list-link.active {
     color: #59FFB9;
 }
-
 .nav__list-link.active:focus {
     color: #93ffd0;
 }
-
 .nav__list-link.active:focus::before {
     background-color: #93ffd0;
 }
-
 .nav__list-link.active::before {
     transform: scaleX(1);
 }
+.nav__hamburger-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    overflow: hidden;
+}
+.nav__hamburger-top,
+.nav__hamburger-center,
+.nav__hamburger-bottom{
+    display: block;
+    width: 95%;
+    height: 3px;
+    border-radius: 99rem;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav__hamburger-top{
+    top: 25%;
+}
+.nav__hamburger-center{
+    top: 50%;
+}
+.nav__hamburger-bottom{
+    top: 75%;
+}
 
+/*
+ * ==================
+ * Hero Header
+ * ==================
+ */
+.hero-header{
+    position: relative;
+    overflow: hidden;
+}
+.header__container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header__bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to top, #111, #1110);
+    z-index: -1;
+}
+.header__left{
+    width: 100%;
+    max-width: 900px;
+}
+.header__right{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    display: none;
+}
+.header__right img{
+    width: 100%;
+}
+.header__sup-text{
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.header__title{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+}
+.header__title-1,
+.header__title-2{
+    display: block;
+    position: relative;
+}
+.header__title-1::before,
+.header__title-1::after,
+.header__title-2::before,
+.header__title-2::after{
+    content: attr(data-role);
+    position: absolute;
+    left: 2px;
+    top: 0;
+    color: white;
+    background: #111111; /* To create an illusion that the text is moving */
+    overflow:hidden;
+    clip: rect(0,900px,0,0); /* Only show some part of the clipped-text */
+}
+
+.header__title-1::before,
+.header__title-2::before{
+    text-shadow: -5px 0 #59FFB9;
+    animation: distort-1 2s infinite linear alternate-reverse;
+}
+
+.header__title-1::after,
+.header__title-2::after{
+    text-shadow: -5px 0 #7218FA;
+    animation: distort-2 2s infinite linear alternate-reverse;
+}
+
+.header__msg{
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+}
+.header__resume{
+    display: inline-flex;
+    border-radius: 7px;
+    text-decoration: none;
+    background-color: #37AE7C;
+    padding: 1.2rem 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 5rem;
+    position: relative;
+}
+.header__resume:hover::before{
+    width: 80%;
+    height: 80%;
+}
+.header__resume::before{
+    content: '';
+    background-color: #00FF94;
+    width: 120%;
+    height: 120%;
+    display: block;
+    position: absolute;
+    transition: all .15s ease-in-out;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    filter: blur(30px);
+    transform: translate(-50%, -50%);
+}
 
 /*
  * ========================
@@ -156,6 +310,39 @@ body {
 @media only screen and (min-width: 36em) {
     .container {
         max-width: 540px;
+    }
+
+    /* Header */
+    .header__right{
+        display: block;
+        opacity: 0.3;
+    }
+    .header__title{
+        flex-direction: row;
+    }
+    .header__title-1{
+        margin-right: 1.5rem;
+    }
+
+    /* Navbar */
+    .nav__list{
+        height: unset;
+        flex-direction: row;
+        justify-content: flex-end;
+        overflow-y: unset;
+    }
+    .nav__list-item{
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+    .nav__list-item:last-of-type{
+        margin-right: 0;
+    }
+    .nav__list-link{
+        font-size: 1.3rem;
+    }
+    .nav__hamburger-btn{
+        display: none;
     }
 }
 
@@ -168,9 +355,10 @@ body {
     .container {
         max-width: 720px;
     }
-    .nav__list {
-        display: flex;
-        justify-content: flex-end;
+    .header__right{
+        width: 500px;
+        opacity: 1;
+        top: 35px;
     }
 }
 
@@ -204,5 +392,142 @@ body {
 @media only screen and (min-width: 87.5em) {
     .container {
         max-width: 1320px;
+    }
+}
+
+
+/*
+ *
+ * Animations
+ *
+ */
+@keyframes distort-1{
+    0% {
+        clip: rect(57px, 9999px, 46px, 0);
+    }
+    5% {
+        clip: rect(15px, 9999px, 56px, 0);
+    }
+    10% {
+        clip: rect(6px, 9999px, 70px, 0);
+    }
+    15% {
+        clip: rect(40px, 9999px, 80px, 0);
+    }
+    20% {
+        clip: rect(32px, 9999px, 44px, 0);
+    }
+    25% {
+        clip: rect(65px, 9999px, 85px, 0);
+    }
+    30% {
+        clip: rect(27px, 9999px, 78px, 0);
+    }
+    35% {
+        clip: rect(59px, 9999px, 93px, 0);
+    }
+    40% {
+        clip: rect(44px, 9999px, 77px, 0);
+    }
+    45% {
+        clip: rect(74px, 9999px, 10px, 0);
+    }
+    50% {
+        clip: rect(73px, 9999px, 42px, 0);
+    }
+    55% {
+        clip: rect(32px, 9999px, 58px, 0);
+    }
+    60% {
+        clip: rect(21px, 9999px, 54px, 0);
+    }
+    65% {
+        clip: rect(71px, 9999px, 11px, 0);
+    }
+    70% {
+        clip: rect(85px, 9999px, 25px, 0);
+    }
+    75% {
+        clip: rect(83px, 9999px, 77px, 0);
+    }
+    80% {
+        clip: rect(62px, 9999px, 52px, 0);
+    }
+    85% {
+        clip: rect(68px, 9999px, 84px, 0);
+    }
+    90% {
+        clip: rect(37px, 9999px, 20px, 0);
+    }
+    95% {
+        clip: rect(10px, 9999px, 15px, 0);
+    }
+    100% {
+        clip: rect(83px, 9999px, 28px, 0);
+    }
+}
+@keyframes distort-2 {
+    0% {
+        clip: rect(20px, 9999px, 96px, 0);
+    }
+    5% {
+        clip: rect(62px, 9999px, 2px, 0);
+    }
+    10% {
+        clip: rect(63px, 9999px, 39px, 0);
+    }
+    15% {
+        clip: rect(92px, 9999px, 75px, 0);
+    }
+    20% {
+        clip: rect(54px, 9999px, 2px, 0);
+    }
+    25% {
+        clip: rect(22px, 9999px, 96px, 0);
+    }
+    30% {
+        clip: rect(39px, 9999px, 98px, 0);
+    }
+    35% {
+        clip: rect(49px, 9999px, 37px, 0);
+    }
+    40% {
+        clip: rect(90px, 9999px, 17px, 0);
+    }
+    45% {
+        clip: rect(36px, 9999px, 57px, 0);
+    }
+    50% {
+        clip: rect(92px, 9999px, 78px, 0);
+    }
+    55% {
+        clip: rect(97px, 9999px, 65px, 0);
+    }
+    60% {
+        clip: rect(69px, 9999px, 30px, 0);
+    }
+    65% {
+        clip: rect(92px, 9999px, 13px, 0);
+    }
+    70% {
+        clip: rect(74px, 9999px, 76px, 0);
+    }
+    75% {
+        clip: rect(2px, 9999px, 45px, 0);
+    }
+    80% {
+        clip: rect(30px, 9999px, 21px, 0);
+    }
+    85% {
+        clip: rect(58px, 9999px, 34px, 0);
+    }
+    90% {
+        clip: rect(79px, 9999px, 27px, 0);
+    }
+    95% {
+        clip: rect(32px, 9999px, 1px, 0);
+    }
+    100% {
+        clip: rect(87px, 9999px, 63px, 0);
     }
 }
