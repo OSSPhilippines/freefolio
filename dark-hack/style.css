@@ -382,6 +382,9 @@ body {
     .container {
         max-width: 1140px;
     }
+    .header__title{
+        font-size: 8rem;
+    }
 }
 
 /*
