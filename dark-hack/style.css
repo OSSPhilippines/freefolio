@@ -58,6 +58,11 @@ table {
  * Start Here
  * ==================
  */
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
 html {
     font-size: 62.5%; /* 10px of 16px */
     box-sizing: border-box;
@@ -423,6 +428,118 @@ body {
 }
 
 /*
+ * ==================
+ * Contact
+ * ==================
+ */
+.contact{
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.contact__form{
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact__illustration{
+    display: none;
+}
+.contact__field-wrapper{
+    margin-bottom: 5rem;
+}
+.contact__field-wrapper label{
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: .8rem;
+    display: inline-flex;
+}
+.contact__field-wrapper input[type="text"],
+.contact__field-wrapper textarea{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+.contact__field-wrapper input[type="text"]:focus,
+.contact__field-wrapper textarea:focus,
+.contact__field-wrapper input[type="text"]:hover,
+.contact__field-wrapper textarea:hover{
+    border-style: solid;
+}
+.contact__field-wrapper input[type="text"]{
+    padding: 1.5rem;
+    border: 2px dashed #64fcd9;
+}
+.contact__field-wrapper textarea{
+    padding: 1rem;
+    border: 2px dashed #64fcd9;
+    resize: none;
+    height: 150px;
+    line-height: 1.6;
+}
+.contact__illustration{
+    position: relative;
+}
+.contact__illustration img{
+    pointer-events: none;
+    width: 100%;
+}
+.contact__illustration::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: #64fcd9;
+    display: block;
+    z-index: -1;
+    filter: blur(150px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact__submit-btn{
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 2rem 2rem;
+    border-radius: 7px;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1.6rem;
+    background-color: #64fcd9;
+    width: 100%;
+    position: relative;
+    color: #111;
+}
+.contact__submit-btn:hover::before{
+    transform: scale(0.3);
+}
+.contact__submit-btn::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #64fcd9;
+    filter: blur(150px);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: center;
+    transition: all .35s ease-in-out;
+}
+
+/*
  * ========================
  * Small Screen -- 576px
  * ========================
@@ -467,7 +584,7 @@ body {
 
     /* Works */
     .work{
-        width: 45%;
+        width: 50%;
     }
 }
 
@@ -515,7 +632,18 @@ body {
         font-size: 8rem;
     }
     .work{
-        width: 28%;
+        width: 33.33333333333333%;
+    }
+    .contact__form{
+        width: 40%;
+        margin-left: unset;
+    }
+    .contact__illustration{
+        width: 60%;
+        display: flex;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
