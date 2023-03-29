@@ -80,6 +80,26 @@ body {
     margin-right: auto;
     width: 90%;
 }
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__title{
+    font-weight: 800;
+    font-size: 5rem;
+    position: relative;
+}
+.section__title::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 125%;
+    transform: translateX(-50%);
+    border-bottom: 3px dashed #00FF94;
+
+}
 
 /*
  * ==================
@@ -303,6 +323,56 @@ body {
 }
 
 /*
+ * ==================
+ * Service Card
+ * ==================
+ */
+.service-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+.service-card__box{
+    margin-bottom: 7rem;
+    border: 2px solid #00372b;
+    padding: 1.5rem;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.service-card__illustration{
+    display: flex;
+    width: 250px;
+}
+.service-card__illustration img{
+    width: 100%;
+    pointer-events: none;
+}
+.service-card__title{
+    font-weight: 800;
+    font-size: 2rem;
+    color: #00FF94;
+    margin-top: 2rem;
+}
+.service-card__msg{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.service-card__bg{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #00FF94;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(30px);
+    transform: translate(-50%, -50%);
+}
+
+/*
  * ========================
  * Small Screen -- 576px
  * ========================
@@ -353,12 +423,27 @@ body {
  */
 @media only screen and (min-width: 48em) {
     .container {
-        max-width: 720px;
+        max-width: 760px;
     }
     .header__right{
         width: 500px;
         opacity: 1;
         top: 35px;
+    }
+    .service-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .service-card__box{
+        width: 28%;
+        max-width: 350px;
+    }
+    .service-card__illustration{
+        width: 100%;
+        max-width: 150px;
+        height: 150px;
     }
 }
 
