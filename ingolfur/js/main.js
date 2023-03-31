@@ -191,3 +191,11 @@
 })(jQuery);
 
 
+var vm = new Vue({
+    el: '#projects',
+    data() {
+        return {
+            ...data
+        };
+    },
+});
