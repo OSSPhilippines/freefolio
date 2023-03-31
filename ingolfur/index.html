@@ -115,6 +115,44 @@
 
     </section>
 
+    <!-- portfolio -->
+    <section id="projects" class="s-portfolio target-section">
+        
+        <div class="row s-portfolio__header">
+            <div class="column large-6 medium-8 tab-full">
+                <div class="section-intro" data-aos="fade-up">
+                    <h1 class="display-1">
+                        Portfolio
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
+
+            <div class="column card" data-aos="fade-up" v-for="(portfolio, index) in portfolios" :key="index">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <div class="folio-item__thumb-link">
+                            <img :src="portfolio.imgLink" alt="">
+                        </div>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">{{ portfolio.techStack }}</div>
+                        <h4 class="folio-item__title">{{ portfolio.title }}</h4>
+                    </div>
+                    <div class="folio-item__project-link">
+                        <a :href="portfolio.githubLink" title="GitHub Link" >GitHub Link</a>
+                        |
+                        <a :href="portfolio.projectLink" title="Project Link">Project Link</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+    
     
     
     <!-- JS -->
