@@ -58,7 +58,8 @@ A collection of **100% FREE** to use portfolio website templates.
 <h3><a href="https://freefolio.web.app/dark-hack" target="_blank">Dark Hack</a></h3>
 <img src="./images/dark-hack.png" alt="simple-screenshot"/>
 
-
+<h3><a href="https://freefolio.web.app/ingolfur" target="_blank">Ingólfur</a></h3>
+<img src="./images/ingolfur.png" alt="ingolfur"/>
 
 ## 😤 I own the content in your templates
 
