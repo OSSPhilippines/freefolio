@@ -11,6 +11,8 @@
     <img alt="GitHub Stars" src="https://badgen.net/github/stars/OSSPhilippines/freefolio/?style=flat-square">
   <a href="https://github.com/OSSPhilippines/freefolio/network">
     <img alt="GitHub Forks" src="https://badgen.net/github/forks/OSSPhilippines/freefolio/?style=flat-square">
+  <a href="https://commitizen.github.io/cz-cli/">
+    <img alt="GitHub Forks" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
 </p>
 
 A collection of **100% FREE** to use portfolio website templates.

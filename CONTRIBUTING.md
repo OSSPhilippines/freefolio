@@ -38,7 +38,13 @@ git clone https://github.com/<your-github-username>/freefolio
 cd freefolio
 ```
 
-**4.** Create a new branch:
+**4.** Install dependencies:
+
+```bash
+npm install
+```
+
+**5.** Create a new branch:
 
 ```bash
 git checkout -b YourBranchName
@@ -48,7 +54,7 @@ git checkout -b YourBranchName
 
 ⚠️ **Make sure** not to run the commands `git add .` or `git add *`. Instead, stage your changes for each file/folder
 
-**4.** Start developement:
+**6.** Start developement:
 
 All template must conform to the following criteria:
 
@@ -68,7 +74,7 @@ And most importantly:
 
 - Have fun! <3
 
-**6.** Add those changes to the branch you just created using the git add command. To let Git track files for a commit, we need to run the following in the terminal:
+**7.** Add those changes to the branch you just created using the git add command. To let Git track files for a commit, we need to run the following in the terminal:
 
 ```bash
 git add my_new_file
@@ -85,21 +91,21 @@ git add .
 git status
 ```
 
-**7.** Now commit those changes using the git commit command:
+**8.** Now commit those changes using the `commitizen` command:
 
 ```bash
-git commit -m "<your_commit_message>"
+npx cz
 ```
 
-**8.** Push your local commits to the remote repository:
+**9.** Push your local commits to the remote repository:
 
 ```bash
 git push origin YourBranchName
 ```
 
-**9.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
+**10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**10.** **Congratulations!** You've made your first contribution to [**Freefolio**](https://github.com/OSSPhilippines/freefolio)! 🙌🏼
+**11.** **Congratulations!** You've made your first contribution to [**Freefolio**](https://github.com/OSSPhilippines/freefolio)! 🙌🏼
 
 **_:trophy: After this, the maintainers will review the PR and will merge it if it helps move the freefolio project forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
 
