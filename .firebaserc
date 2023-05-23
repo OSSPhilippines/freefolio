@@ -1,14 +1,5 @@
 {
   "projects": {
     "default": "phanida-lip-portfolio"
-  },
-  "targets": {
-    "phanida-lip-portfolio": {
-      "hosting": {
-        "production": [
-          "pkpndLi"
-        ]
-      }
-    }
   }
 }
