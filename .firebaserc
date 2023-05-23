@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "ossph-org"
+    "default": "phanida-lip-portfolio"
   },
   "targets": {
-    "ossph-org": {
+    "phanida-lip-portfolio": {
       "hosting": {
         "production": [
-          "freefolio"
+          "pkpndLi"
         ]
       }
     }
