@@ -1,227 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- JavaScript Libraries -->
     <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
 
     <!-- CSS & JS -->
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
 
     <!-- Meta Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="100% FREE Professional Portfolio Templates - Plain Template"/>
-    <meta name="keywords" content="OSSPH, Free portfolio"/>
-    <title> Hax | a Freefolio template by OSSPH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="100% FREE Professional Portfolio Templates - Plain Template"
+    />
+    <meta name="keywords" content="OSSPH, Free portfolio" />
+    <title>PKphanida.Lip | a Freefolio template by OSSPH</title>
 
     <!-- Icons -->
-    <link rel="icon" href="./favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
-</head>
-<body>
-<main>
-    <!-- Hero Header -->
-    <header id="heroHeader" class="hero-header">
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/icons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/icons/apple-touch-icon-57x57.png"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Hero Header -->
+      <header id="heroHeader" class="hero-header">
         <nav id="navBar" class="nav">
-            <div class="container">
-                <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
-                    <span class="nav__hamburger-top"></span>
-                    <span class="nav__hamburger-center"></span>
-                    <span class="nav__hamburger-bottom"></span>
-                </button>
-                <ul id="navList" class="nav__list">
-                    <li class="nav__list-item">
-                        <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#services">&lt;Services &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#works">&lt;Works &sol;&gt;</a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="container">
+            <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
+              <span class="nav__hamburger-top"></span>
+              <span class="nav__hamburger-center"></span>
+              <span class="nav__hamburger-bottom"></span>
+            </button>
+            <ul id="navList" class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__list-link active" href="#heroHeader"
+                  >&lt;Home &sol;&gt;</a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#services"
+                  >&lt;About &sol;&gt;</a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#works"
+                  >&lt;Projects &sol;&gt;</a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#contact"
+                  >&lt;Contact &sol;&gt;</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
         <section class="header__container container">
-            <div class="header__left">
-                <span class="header__sup-text">Hello There! I am a</span>
-                <h1 class="header__title">
-                    <span class="header__title-1" data-role="WEB">Web</span>
-                    <span class="header__title-2" data-role="DEVELOPER">Developer</span>
-                </h1>
-                <p class="header__msg">As a front-end web developer, my passion lies in creating beautiful and intuitive
-                    user experiences through the use of clean and efficient code.</p>
-                <a href="#" class="header__resume">Resume</a>
-            </div>
-            <div class="header__right">
-                <img src="./assets/illustrations/header.svg" alt="Header section illustration"/>
-            </div>
+          <div class="header__left">
+            <span class="header__sup-text">Hello There! I am a</span>
+            <h1 class="header__title">
+              <span class="header__title-1" data-role="WEB">SOFTWARE</span>
+              <span class="header__title-2" data-role="DEVELOPER"
+                >Developer</span
+              >
+            </h1>
+            <p class="header__msg">
+              As a passionate software developer, I strive to tackle challenges
+              head-on and find joy in the satisfaction of delivering efficient
+              and successful solutions.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1TN91zlI3569wcIeF7W27r8jHHfPERjjy/view?usp=sharing"
+              target="_blank"
+              class="header__resume"
+              >Resume</a
+            >
+          </div>
+          <div class="header__right">
+            <img
+              src="./assets/illustrations/header.svg"
+              alt="Header section illustration"
+            />
+          </div>
         </section>
         <span class="header__bg"></span>
-    </header>
+      </header>
 
-    <!-- Services -->
-    <section id="services" class="section container">
-        <h2 class="section__title">Services</h2>
+      <!-- Services -->
+      <section id="services" class="section container">
+        <h2 class="section__title">About</h2>
 
         <div class="service-cards">
-            <article class="service-card__box">
-                <span class="service-card__illustration">
-                    <img src="./assets/services/support.svg" alt="Support Illustration"/>
-                </span>
-                <h3 class="service-card__title">Deployment</h3>
-                <p class="service-card__msg"> I am always available to address any issues or concerns you may have.</p>
-                <span class="service-card__bg"></span>
-            </article>
-            <article class="service-card__box">
-                <span class="service-card__illustration">
-                    <img src="./assets/services/design.svg" alt="Design Illustration"/>
-                </span>
-                <h3 class="service-card__title">Design</h3>
-                <p class="service-card__msg">Specialized in creating stunning websites that are both visually appealing and user-friendly.</p>
-                <span class="service-card__bg"></span>
-            </article>
-            <article class="service-card__box">
-                <span class="service-card__illustration">
-                    <img src="./assets/services/developing.svg" alt="Deploy Illustration"/>
-                </span>
-                <h3 class="service-card__title">Developing</h3>
-                <p class="service-card__msg"> I offer custom web development services tailored to your specific needs as a solo professional.</p>
-                <span class="service-card__bg"></span>
-            </article>
-        </div>
-    </section>
-
-    <!-- Sample Works -->
-    <section id="works" class="section container">
-        <h2 class="section__title">My Works</h2>
-        <div class="works">
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img src="./assets/works/sample.png" alt="My Work 1"/>
-                </span>
-                    <h3 class="work__title">My Landing Page</h3>
-                    <span class="work__badges">
-                    <span class="work__badge">HTML</span>
-                    <span class="work__badge">CSS</span>
-                    <span class="work__badge">JavaScript</span>
-                </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img src="./assets/works/sample.png" alt="My Work 1"/>
-                </span>
-                    <h3 class="work__title">My Landing Page</h3>
-                    <span class="work__badges">
-                    <span class="work__badge">HTML</span>
-                    <span class="work__badge">CSS</span>
-                    <span class="work__badge">JavaScript</span>
-                </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img src="./assets/works/sample.png" alt="My Work 1"/>
-                </span>
-                    <h3 class="work__title">My Landing Page</h3>
-                    <span class="work__badges">
-                    <span class="work__badge">HTML</span>
-                    <span class="work__badge">CSS</span>
-                    <span class="work__badge">JavaScript</span>
-                </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img src="./assets/works/sample.png" alt="My Work 1"/>
-                </span>
-                    <h3 class="work__title">My Landing Page</h3>
-                    <span class="work__badges">
-                    <span class="work__badge">HTML</span>
-                    <span class="work__badge">CSS</span>
-                    <span class="work__badge">JavaScript</span>
-                </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img src="./assets/works/sample.png" alt="My Work 1"/>
-                </span>
-                    <h3 class="work__title">My Landing Page</h3>
-                    <span class="work__badges">
-                    <span class="work__badge">HTML</span>
-                    <span class="work__badge">CSS</span>
-                    <span class="work__badge">JavaScript</span>
-                </span>
-                </div>
-            </article>
-            <article class="work">
-                <div class="work__box">
-                    <span class="work__img-box">
-                    <img src="./assets/works/sample.png" alt="My Work 1"/>
-                </span>
-                    <h3 class="work__title">My Landing Page</h3>
-                    <span class="work__badges">
-                    <span class="work__badge">HTML</span>
-                    <span class="work__badge">CSS</span>
-                    <span class="work__badge">JavaScript</span>
-                </span>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section container">
-        <h2 class="section__title">Let's Connect!</h2>
-        <div class="contact">
-            <form class="contact__form">
-                <div class="contact__field-wrapper">
-                    <label for="contactNameTxt">Name:</label>
-                    <input id="contactNameTxt" type="text" placeholder="What's your name?"/>
-                </div>
-                <div class="contact__field-wrapper">
-                    <label for="contactDescriptionTxt">Message:</label>
-                    <textarea id="contactDescriptionTxt" placeholder="Lets connect!"></textarea>
-                </div>
-
-                <button type="submit" class="contact__submit-btn">Submit</button>
-            </form>
-            <span class="contact__illustration">
-                <img src="./assets/illustrations/connect.svg" alt="Group of people connecting with each other"/>
+          <article class="service-card__box">
+            <span class="service-card__illustration">
+              <img
+                src="./assets/services/profile-img.png"
+                alt="Support Illustration"
+              />
             </span>
+            <h3 class="service-card__title">Greetings!</h3>
+            <p class="service-card__msg">
+              My name is Phanida Lipha, and I am a software developer driven by
+              a genuine passion for creating meaningful solutions. I find joy in
+              crafting software that not only meets the needs of my clients but
+              also leaves a positive impact on its users. With a focus on
+              quality, collaboration, and user satisfaction, I am committed to
+              bringing your software ideas to life. Let's embark on this
+              exciting journey together and make a difference through remarkable
+              software development.
+            </p>
+            <span class="service-card__bg"></span>
+          </article>
+          <article class="service-card__box">
+            <span class="service-card-kills">
+              <img
+                src="./assets/services/icons/html5.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/js.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/nodejs.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/react.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/tailwind.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/bootstrap.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/firebase.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/nextjs.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/mongodb.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/mysql.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/c++.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/android.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/npm.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+            </span>
+            <h3 class="service-card__title">Skills</h3>
+            <p class="service-card__msg">
+              Here are some of the programming languages, modules and frameworks
+              with which I have gained knowledge, practice, and experience.
+            </p>
+            <span class="service-card__bg"></span>
+          </article>
+          <article class="service-card__box">
+            <!-- <span class="service-card__illustration">
+              <img
+                src="./assets/services/developing.svg"
+                alt="Deploy Illustration"
+              />
+            </span> -->
+            <span class="service-card-kills">
+              <img
+                src="./assets/services/icons/github.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/jira.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/vscode.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/figma.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+              <img
+                src="./assets/services/icons/postman.svg"
+                alt="service-skill-icons"
+                class="service-skill-icons"
+              />
+            </span>
+            <h3 class="service-card__title">Tools</h3>
+            <p class="service-card__msg">
+              Here are the tools I utilize in the web application development
+              process.
+            </p>
+            <span class="service-card__bg"></span>
+          </article>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        Template made with ❤️ by <a href="https://github.com/Finestwork" target="_blank" class="footer__link">Kapitan Heneral</a>
-    </footer>
-</main>
-</body>
+      <!-- Sample Works -->
+      <section id="works" class="section container">
+        <h2 class="section__title">Projects</h2>
+        <div class="works">
+          <article class="work">
+            <div class="work__box">
+              <span class="work__img-box">
+                <img src="./assets/works/sample.png" alt="My Work 1" />
+              </span>
+              <h3 class="work__title">My Landing Page</h3>
+              <span class="work__badges">
+                <span class="work__badge">NextJS</span>
+                <span class="work__badge">Tailwind</span>
+                <span class="work__badge">JavaScript</span>
+              </span>
+              <span class="work__links">
+                <a
+                  href="https://actitvity-tracking-lqldigp8p-pkpndliz.vercel.app"
+                  class="work__link"
+                  target="_blank"
+                  ><img src="./assets/icons/demo3.png" alt="work_link_icon"
+                /></a>
+                <a
+                  href="https://actitvity-tracking-lqldigp8p-pkpndliz.vercel.app"
+                  class="work__link"
+                  target="_blank"
+                  ><img
+                    src="./assets/icons/computing-code.png"
+                    alt="work_link_icon"
+                /></a>
+              </span>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work__box">
+              <span class="work__img-box">
+                <img src="./assets/works/colmar.png" alt="My Work 1" />
+              </span>
+              <h3 class="work__title">Practice Colmar academy</h3>
+              <span class="work__badges">
+                <span class="work__badge">HTML</span>
+                <span class="work__badge">CSS</span>
+              </span>
+              <span class="work__links">
+                <a
+                  href="https://practice-colmar-academy.vercel.app/"
+                  class="work__link"
+                  target="_blank"
+                  ><img src="./assets/icons/demo3.png" alt="work_link_icon"
+                /></a>
+                <a
+                  href="https://github.com/pkpndLiZ/Practice-Colmar-academy.git"
+                  class="work__link"
+                  target="_blank"
+                  ><img
+                    src="./assets/icons/computing-code.png"
+                    alt="work_link_icon"
+                /></a>
+              </span>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work__box">
+              <span class="work__img-box">
+                <img src="./assets/works/find-hat.png" alt="My Work 1" />
+              </span>
+              <h3 class="work__title">Find Your Hat</h3>
+              <span class="work__badges">
+                <span class="work__badge">JavaScript</span>
+              </span>
+              <span class="work_links">
+                <a
+                  href="https://replit.com/@pkpndLiZ/jsd4-javascript-assessment"
+                  class="work__link"
+                  target="_blank"
+                  ><img src="./assets/icons/demo3.png" alt="work_link_icon"
+                /></a>
+              </span>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work__box">
+              <span class="work__img-box">
+                <img
+                  src="./assets/works/react-assessment.png"
+                  alt="My Work 1"
+                />
+              </span>
+              <h3 class="work__title">React-Assessment Generation Thailand</h3>
+              <span class="work__badges">
+                <span class="work__badge">REACT</span>
+                <span class="work__badge">CSS</span>
+                <span class="work__badge">JavaScript</span>
+              </span>
+              <span class="work__links">
+                <a
+                  href="https://career-changer-react-assessment-eta.vercel.app/"
+                  class="work__link"
+                  target="_blank"
+                  ><img src="./assets/icons/demo3.png" alt="work_link_icon"
+                /></a>
+                <a
+                  href="https://github.com/pkpndLiZ/career-changer-react-assessment.git"
+                  class="work__link"
+                  target="_blank"
+                  ><img
+                    src="./assets/icons/computing-code.png"
+                    alt="work_link_icon"
+                /></a>
+              </span>
+            </div>
+          </article>
+          <!-- <article class="work">
+            <div class="work__box">
+              <span class="work__img-box">
+                <img src="./assets/works/sample.png" alt="My Work 1" />
+              </span>
+              <h3 class="work__title">My Landing Page</h3>
+              <span class="work__badges">
+                <span class="work__badge">HTML</span>
+                <span class="work__badge">CSS</span>
+                <span class="work__badge">JavaScript</span>
+              </span>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work__box">
+              <span class="work__img-box">
+                <img src="./assets/works/sample.png" alt="My Work 1" />
+              </span>
+              <h3 class="work__title">My Landing Page</h3>
+              <span class="work__badges">
+                <span class="work__badge">HTML</span>
+                <span class="work__badge">CSS</span>
+                <span class="work__badge">JavaScript</span>
+              </span>
+            </div>
+          </article> -->
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section container">
+        <h2 class="section__title">Let's Connect!</h2>
+        <span class="contact__icons">
+          <a href="https://www.linkedin.com/in/phanida-lipha/" target="_blank"
+            ><img
+              src="./assets/connect/icons8-linkedin.svg"
+              alt="Group of people connecting with each other"
+              class="contact-icon"
+          /></a>
+          <a href="https://github.com/pkpndLiZ" target="_blank"
+            ><img
+              src="./assets/connect/icons8-github.svg"
+              alt="Group of people connecting with each other"
+              class="contact-icon"
+          /></a>
+          <a href=""
+            ><img
+              src="./assets/connect/icons8-email.svg"
+              alt="Group of people connecting with each other"
+              class="contact-icon"
+          /></a>
+        </span>
+        <div class="contact">
+          <form class="contact__form">
+            <div class="contact__field-wrapper">
+              <label for="contactNameTxt">Name:</label>
+              <input
+                id="contactNameTxt"
+                type="text"
+                placeholder="What's your name?"
+              />
+            </div>
+            <div class="contact__field-wrapper">
+              <label for="contactDescriptionTxt">Message:</label>
+              <textarea
+                id="contactDescriptionTxt"
+                placeholder="Lets connect!"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact__submit-btn">Submit</button>
+          </form>
+          <span class="contact__illustration">
+            <img
+              src="./assets/illustrations/connect.svg"
+              alt="Group of people connecting with each other"
+            />
+          </span>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        Template made with ❤️ by
+        <a
+          href="https://github.com/Finestwork"
+          target="_blank"
+          class="footer__link"
+          >Kapitan Heneral</a
+        >
+      </footer>
+    </main>
+  </body>
 </html>
