@@ -63,6 +63,9 @@ A collection of **100% FREE** to use portfolio website templates.
 <h3><a href="https://freefolio.web.app/ingolfur" target="_blank">Ingólfur</a></h3>
 <img src="./images/ingolfur.png" alt="ingolfur"/>
 
+<h3><a href="https://freefolio.web.app/anime" target="_blank">Anime</a></h3>
+<img src="./images/anime.png" alt="anime"/>
+
 ## 😤 I own the content in your templates
 
 If any of the content from our collection is own by you or your organization and it has no proper attribution to the owner, please send us an email at opensourcesoftwareph@gmail.com. This happens sometimes and we apologize if we overlooked it.
