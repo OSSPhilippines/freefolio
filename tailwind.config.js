@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-export const content = [];
-export const theme = {
-  extend: {},
-};
-export const plugins = [];
+// eslint-disable-next-line no-undef
+module.exports = {
+  content: ['./**/*.{html,js}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
