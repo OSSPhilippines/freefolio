@@ -111,6 +111,22 @@ git push origin YourBranchName
 
 ---
 
+## 🍃 Running tailwindcss in environment watch mode
+
+Enter the following command in your terminal:
+
+```bash
+yarn dlx tailwindcss -i global.css -o index.css --watch
+```
+
+add the following line to your `index.html` file:
+
+```html
+<link rel="stylesheet" href="index.css" />
+```
+
+---
+
 ## Style Guide for Git Commit Messages :memo:
 
 **How you can add more value to your contribution logs:**
