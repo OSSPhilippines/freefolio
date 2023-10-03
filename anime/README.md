@@ -2,7 +2,7 @@
 
 An Anime Portfolio Template for you!
 
-![Anime - Screenshot](./assets/anime.png "Anime - Screenshot")
+![Anime - Screenshot](./img/anime.png "Anime - Screenshot")
 
 ## ⚡ Features
 
