@@ -1,4 +1,5 @@
 200.html
 .idea
 package-lock.json
+yarn.lock
 node_modules
