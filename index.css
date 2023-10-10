@@ -2448,9 +2448,9 @@ video {
   content: var(--tw-content);
 }
 
-.\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
+/* .\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
   a-z-a--z0-9: \\-\\. $;
-}
+} */
 
 @media (min-width: 640px) {
   .sm\:container {

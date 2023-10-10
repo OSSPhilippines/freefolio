@@ -7,13 +7,11 @@
     <meta property="og:title" content="OSSPH Freefolio" />
     <meta
       property="og:description"
-      content="100% FREE Professional Portfolio Templates"
-    />
+      content="100% FREE Professional Portfolio Templates" />
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://i.postimg.cc/85rXg2LD/oss-ph-og.png"
-    />
+      content="https://i.postimg.cc/85rXg2LD/oss-ph-og.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -22,19 +20,23 @@
     <meta name="twitter:title" content="OSSPH Freefolio" />
     <meta
       name="twitter:description"
-      content="100% FREE Professional Portfolio Templates"
-    />
+      content="100% FREE Professional Portfolio Templates" />
     <title>Freefolio by OSSPH</title>
     <link rel="shortcut icon" href="./clean/img/logo.svg" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+    };
+  </script>
+
   <body class="bg-violet-200 text-violet-800">
-    <header class="bg-violet-500">
+    <header class="bg-violet-500 dark:bg-gray-900">
       <div
-        class="container mx-auto px-5 py-8 flex flex-row flex-wrap gap-4 justify-between items-center"
-      >
+        class="container mx-auto px-5 py-8 flex flex-row flex-wrap gap-4 justify-between items-center">
         <a href="https://ossph.org/" target="_blank"
           ><img
             class="h-14"
@@ -42,33 +44,37 @@
             alt="OSSPH logo"
         /></a>
         <div class="flex items-center gap-4">
-          <h1 class="text-violet-900 text-3xl lg:text-5xl font-black">
+          <h1
+            class="text-violet-900 text-3xl lg:text-5xl font-black">
             Freefolio
           </h1>
-          <div class="bg-red-100 h-[10px] w-[10px] rounded-full"></div>
+          <div class="bg-red-100 h-[10px] w-[10px] rounded-full mt-3"></div>
           <a
             href="https://github.com/OSSPhilippines/freefolio"
-            class="text-violet-900 text-3xl lg:text-5xl font-black"
-          >
+            class="text-violet-900 text-3xl lg:text-5xl font-black">
             GitHub
           </a>
+          <img
+            src="./images/moon.png"
+            alt="sun image"
+            id="theme-toggle"
+            class="border rounded-md text-center p-1 w-9 mr-4 mt-2 dark:w-8 transition-all transition-duration: 150ms; flex-1 align-center justify-center cursor-pointer hover:scale-[1.4] hover:bg-black" />
         </div>
       </div>
     </header>
 
     <main>
-      <div class="container mx-auto px-5 py-24 grid md:grid-cols-2 gap-12">
+      <div
+        class="container mx-auto px-5 py-24 grid md:grid-cols-2 gap-12 dark:bg-gray-950">
         <a
           href="hacker"
-          class="relative bottom-0  hover:bottom-2 hover:transition-all"
+          class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/hacker.png"
             alt="Hacker folio"
-            class="rounded-md shadow object-cover aspect-video"
-          />
+            class="rounded-md shadow object-cover aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Hacker</h2>
         </a>
 
@@ -76,13 +82,11 @@
           href="indify"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/indify.png"
             alt="Indify folio img"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Indify</h2>
         </a>
 
@@ -90,13 +94,11 @@
           href="plain"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/plain.png"
             alt="Plain folio"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Plain</h2>
         </a>
 
@@ -104,13 +106,11 @@
           href="clean"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/clean.png"
             alt="Clean folio"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Clean</h2>
         </a>
 
@@ -118,13 +118,11 @@
           href="beginner"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/beginner.png"
             alt="Beginner folio"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Beginner</h2>
         </a>
 
@@ -132,13 +130,11 @@
           href="outlines"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/outlines.png"
             alt="Outlines folio"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Outlines</h2>
         </a>
 
@@ -146,13 +142,11 @@
           href="simple"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/simple.PNG"
             alt="Simple folio"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Simple</h2>
         </a>
 
@@ -160,13 +154,11 @@
           href="deepsea"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/deepsea.png"
             alt="Deepsea folio"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Deep Sea</h2>
         </a>
 
@@ -174,13 +166,11 @@
           href="dark-hack"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/dark-hack.png"
             alt="Dark Hack folio"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Dark Hack</h2>
         </a>
 
@@ -188,13 +178,11 @@
           href="ingolfur"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/ingolfur.png"
             alt="Ingólfur"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Ingólfur</h2>
         </a>
 
@@ -202,13 +190,11 @@
           href="anime"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/anime.png"
             alt="Anime"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">Anime</h2>
         </a>
 
@@ -216,13 +202,11 @@
           href="easy"
           class="relative bottom-0 hover:bottom-2 hover:transition-all"
           target="_blank"
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <img
             src="./images/easy.png"
             alt="Anime"
-            class="rounded-md shadow object-cover w-full aspect-video"
-          />
+            class="rounded-md shadow object-cover w-full aspect-video" />
           <h2 class="text-3xl font-bold mt-2">easy</h2>
         </a>
       </div>
@@ -233,6 +217,17 @@
       AOS.init({
         once: true,
         delay: 0,
+      });
+    </script>
+    <script>
+      var theme_toggle = document.getElementById("theme-toggle");
+      theme_toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains("dark")) {
+          theme_toggle.src = "./images/sun.png";
+        } else {
+          theme_toggle.src = "./images/moon.png";
+        }
       });
     </script>
   </body>
