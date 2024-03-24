@@ -108,7 +108,7 @@
               <h1 class="primary--text" data-aos="fade-up">/Recent Works</h1>
             </v-col>
             <v-col v-for="(work, index) in works" cols="12" :key="index">
-              <v-card hover="hover" height="100%" data-aos="fade-up">
+              <v-card hover="hover" height="100%" data-aos="fade-up" rel="noreferrer" :href="work.link" >
                 <v-card-text>
                   <h2 class="primary--text">>
                     {{work.name}}</h2>
