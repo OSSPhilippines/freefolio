@@ -31,6 +31,9 @@ A collection of **100% FREE** to use portfolio website templates.
 
 ✅ 0 Dependencies
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=ossphilippines/freefolio@github)](https://gitads.dev/v1/ad-track?source=ossphilippines/freefolio@github)
+
 ## 🎨 Templates
 
 <h3><a href="https://freefolio.web.app/hacker" target="_blank">Hacker</a></h3>
