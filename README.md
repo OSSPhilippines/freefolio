@@ -93,3 +93,5 @@ Freefolio is licensed under the MIT License - see the [LICENSE](LICENSE) file fo
 Need help with setting up your portfolio website?
 
 Contact us at https://ossph.org
+
+<!-- GitAds-Verify: I945ALUM1XCZIG1KF2D1TFPEUZQCAYWL -->
