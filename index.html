@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="OSSPH Freefolio" />
+    <meta name="description" content="A collection of 100% FREE professional portfolio website templates. Beautiful, responsive, and ready to use for developers, designers, and creatives." />
+    <meta property="og:title" content="OSSPH Freefolio - Free Portfolio Templates" />
     <meta
       property="og:description"
-      content="100% FREE Professional Portfolio Templates" />
+      content="100% FREE Professional Portfolio Templates - No dependencies, mobile responsive, SEO friendly" />
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
@@ -21,214 +22,720 @@
     <meta
       name="twitter:description"
       content="100% FREE Professional Portfolio Templates" />
-    <title>Freefolio by OSSPH</title>
+    <title>Freefolio - Free Portfolio Templates by OSSPH</title>
     <link rel="shortcut icon" href="./clean/img/logo.svg" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
   <script>
     tailwind.config = {
       darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'ossph-blue': '#0060a0',
+            'ossph-dark': '#004070',
+            'ossph-light': '#0080c0',
+            'ossph-pale': '#e6f2f9'
+          },
+          animation: {
+            'gradient': 'gradient 8s ease infinite',
+            'float': 'float 6s ease-in-out infinite'
+          },
+          keyframes: {
+            gradient: {
+              '0%, 100%': {
+                'background-size': '200% 200%',
+                'background-position': 'left center'
+              },
+              '50%': {
+                'background-size': '200% 200%',
+                'background-position': 'right center'
+              }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            }
+          }
+        }
+      }
     };
   </script>
 
-  <body class="bg-violet-200 text-violet-800">
-    <header class="bg-violet-500 dark:bg-[#271d3a]">
-      <div
-        class="container mx-auto px-5 py-8 flex flex-row flex-wrap gap-4 justify-between items-center">
-        <a href="https://ossph.org/" target="_blank"
-          ><img
-            class="h-14"
-            src="./images/osslogo-text-white.png"
-            alt="OSSPH logo"
-        /></a>
-        <div class="flex items-center gap-4">
-          <h1
-            class="text-violet-900 text-3xl lg:text-5xl font-black dark:text-white">
-            Freefolio
-          </h1>
-          <div class="bg-red-100 h-[10px] w-[10px] rounded-full mt-3"></div>
-          <a
-            href="https://github.com/OSSPhilippines/freefolio"
-            class="text-violet-900 text-3xl lg:text-5xl font-black dark:text-white">
-            GitHub
-          </a>
-          <img
-            src="./images/moon.png"
-            alt="sun image"
-            id="theme-toggle"
-            class="border rounded-md text-center p-1 w-9 mr-4 mt-2 dark:w-8 transition-all transition-duration: 150ms; flex-1 align-center justify-center cursor-pointer hover:scale-[1.4] hover:bg-black" />
-        </div>
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #0060a0 0%, #0080c0 50%, #00a0e0 100%);
+      background-size: 200% 200%;
+      animation: gradient 10s ease infinite;
+    }
+
+    .ossph-gradient {
+      background: linear-gradient(135deg, #0060a0, #0080c0);
+    }
+
+    .template-card {
+      transition: all 0.3s ease;
+    }
+
+    .template-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 96, 160, 0.15);
+    }
+
+    /* Dark mode logo fix */
+    .dark .logo-invert {
+      filter: none;
+    }
+
+    .logo-invert {
+      filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(938%) hue-rotate(166deg) brightness(95%) contrast(101%);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #0060a0;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #004070;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #1f2937;
+    }
+
+    .dark ::-webkit-scrollbar-thumb {
+      background: #0080c0;
+    }
+  </style>
+
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-900 shadow-lg border-b-2 border-ossph-blue/20 dark:border-ossph-light/20">
+      <div class="container mx-auto px-6 py-4">
+        <nav class="flex flex-wrap items-center justify-between">
+          <div class="flex items-center space-x-6">
+            <a href="https://ossph.org/" target="_blank">
+              <img class="h-10" src="./images/osslogo-text-white.png" alt="OSSPH logo" style="filter: brightness(0) saturate(100%) invert(32%) sepia(98%) saturate(938%) hue-rotate(166deg) brightness(95%) contrast(101%);" />
+            </a>
+            <div class="h-6 w-px bg-ossph-blue/30 dark:bg-ossph-light/30"></div>
+            <div>
+              <h1 class="text-2xl lg:text-3xl font-bold text-ossph-blue dark:text-ossph-light">
+                Freefolio
+              </h1>
+              <p class="text-xs text-gray-600 dark:text-gray-400">Free Portfolio Templates by OSSPH</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <a href="https://github.com/OSSPhilippines/freefolio"
+               target="_blank"
+               class="flex items-center space-x-2 px-4 py-2 bg-ossph-blue hover:bg-ossph-dark text-white rounded-lg transition shadow-md hover:shadow-lg">
+              <i class="fab fa-github text-lg"></i>
+              <span class="hidden sm:block text-sm font-medium">Star on GitHub</span>
+            </a>
+            <button id="theme-toggle"
+                    class="p-2 bg-ossph-pale dark:bg-gray-800 rounded-lg hover:bg-ossph-blue/20 dark:hover:bg-ossph-light/20 transition">
+              <i class="fas fa-moon text-ossph-blue dark:text-ossph-light text-lg" id="theme-icon"></i>
+            </button>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <main class="dark:bg-[#201c29]">
-      <div
-        class="container mx-auto px-5 py-24 grid md:grid-cols-2 gap-12">
-        <a
-          href="hacker"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/hacker.png"
-            alt="Hacker folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Hacker</h2>
-        </a>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-ossph-pale via-white to-blue-50 dark:from-gray-800 dark:to-gray-900 py-20 relative overflow-hidden">
+      <!-- Decorative elements -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-ossph-blue/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-ossph-light/5 rounded-full blur-3xl"></div>
 
-        <a
-          href="indify"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/indify.png"
-            alt="Indify folio img"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Indify</h2>
-        </a>
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="inline-block mb-4 px-4 py-1 bg-ossph-blue/10 dark:bg-ossph-light/20 rounded-full">
+          <span class="text-ossph-blue dark:text-ossph-light font-semibold text-sm">🚀 100% Free & Open Source</span>
+        </div>
+        <h2 class="text-4xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+          Beautiful Portfolio Templates
+          <span class="block text-3xl lg:text-5xl mt-2 bg-gradient-to-r from-ossph-blue to-ossph-light bg-clip-text text-transparent">
+            Built by the Community
+          </span>
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+          Professional, responsive, and completely free portfolio templates.
+          No dependencies, no setup required. Just download and customize.
+        </p>
 
-        <a
-          href="plain"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/plain.png"
-            alt="Plain folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Plain</h2>
-        </a>
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+          <div class="bg-white dark:bg-gray-800 px-5 py-3 rounded-full shadow-lg flex items-center space-x-2 border border-ossph-blue/20">
+            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-check text-green-600 text-sm"></i>
+            </div>
+            <span class="font-medium">100% Free</span>
+          </div>
+          <div class="bg-white dark:bg-gray-800 px-5 py-3 rounded-full shadow-lg flex items-center space-x-2 border border-ossph-blue/20">
+            <div class="w-8 h-8 bg-ossph-pale rounded-full flex items-center justify-center">
+              <i class="fas fa-mobile-alt text-ossph-blue text-sm"></i>
+            </div>
+            <span class="font-medium">Mobile Ready</span>
+          </div>
+          <div class="bg-white dark:bg-gray-800 px-5 py-3 rounded-full shadow-lg flex items-center space-x-2 border border-ossph-blue/20">
+            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-rocket text-purple-600 text-sm"></i>
+            </div>
+            <span class="font-medium">Lightning Fast</span>
+          </div>
+          <div class="bg-white dark:bg-gray-800 px-5 py-3 rounded-full shadow-lg flex items-center space-x-2 border border-ossph-blue/20">
+            <div class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-code text-orange-600 text-sm"></i>
+            </div>
+            <span class="font-medium">Easy Setup</span>
+          </div>
+        </div>
 
-        <a
-          href="clean"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/clean.png"
-            alt="Clean folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Clean</h2>
-        </a>
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-ossph-blue/10 hover:border-ossph-blue/30 transition group">
+            <div class="text-4xl font-bold text-ossph-blue group-hover:scale-110 transition-transform" id="templateCount">15+</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">Templates</div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-ossph-blue/10 hover:border-ossph-blue/30 transition group">
+            <div class="text-4xl font-bold text-ossph-blue group-hover:scale-110 transition-transform">0</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">Dependencies</div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-ossph-blue/10 hover:border-ossph-blue/30 transition group">
+            <div class="text-4xl font-bold text-ossph-blue group-hover:scale-110 transition-transform">100%</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">Free Forever</div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-ossph-blue/10 hover:border-ossph-blue/30 transition group">
+            <div class="text-4xl font-bold text-ossph-blue group-hover:scale-110 transition-transform">MIT</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">License</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <a
-          href="beginner"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/beginner.png"
-            alt="Beginner folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Beginner</h2>
-        </a>
+    <!-- Templates Gallery -->
+    <main class="py-12 bg-gray-50 dark:bg-gray-900">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="templatesGrid">
+          <!-- Hacker Template -->
+          <div class="template-card group" data-category="dark minimal" data-aos="fade-up">
+            <a href="hacker" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/hacker.png" alt="Hacker Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div class="absolute top-4 right-4 bg-ossph-blue text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Terminal Style
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Hacker</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Terminal-inspired portfolio for programmers
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Minimal</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Dark</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-        <a
-          href="outlines"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/outlines.png"
-            alt="Outlines folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Outlines</h2>
-        </a>
+          <!-- Indify Template -->
+          <div class="template-card group" data-category="creative professional" data-aos="fade-up">
+            <a href="indify" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/indify.png" alt="Indify Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Indify</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Modern and creative portfolio design
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Creative</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Modern</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-        <a
-          href="simple"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/simple.PNG"
-            alt="Simple folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Simple</h2>
-        </a>
+          <!-- Plain Template -->
+          <div class="template-card group" data-category="minimal professional" data-aos="fade-up">
+            <a href="plain" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/plain.png" alt="Plain Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Plain</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Simple and straightforward portfolio
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Minimal</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Clean</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-        <a
-          href="deepsea"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/deepsea.png"
-            alt="Deepsea folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Deep Sea</h2>
-        </a>
+          <!-- Clean Template -->
+          <div class="template-card group" data-category="minimal professional" data-aos="fade-up">
+            <a href="clean" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/clean.png" alt="Clean Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Clean</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Minimalist design with focus on content
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Minimal</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Professional</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-        <a
-          href="dark-hack"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/dark-hack.png"
-            alt="Dark Hack folio"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Dark Hack</h2>
-        </a>
+          <!-- Beginner Template -->
+          <div class="template-card group" data-category="minimal" data-aos="fade-up">
+            <a href="beginner" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/beginner.png" alt="Beginner Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Beginner</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Perfect starter template for newcomers
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Simple</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Starter</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-        <a
-          href="ingolfur"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/ingolfur.png"
-            alt="Ingólfur"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Ingólfur</h2>
-        </a>
+          <!-- Outlines Template -->
+          <div class="template-card group" data-category="creative" data-aos="fade-up">
+            <a href="outlines" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/outlines.png" alt="Outlines Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Outlines</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Unique outline-based design approach
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Creative</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Unique</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-        <a
-          href="anime"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/anime.png"
-            alt="Anime"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">Anime</h2>
-        </a>
+          <!-- Simple Template -->
+          <div class="template-card group" data-category="minimal" data-aos="fade-up">
+            <a href="simple" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/simple.PNG" alt="Simple Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Simple</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Straightforward and easy to use
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Minimal</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Basic</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
 
-        <a
-          href="easy"
-          class="relative bottom-0 hover:bottom-2 hover:transition-all flex flex-col justify-between items-start"
-          target="_blank"
-          data-aos="fade-up">
-          <img
-            src="./images/easy.png"
-            alt="Anime"
-            class="rounded-md shadow object-cover object-center h-full w-full aspect-video" />
-          <h2 class="text-3xl font-bold mt-2 dark:text-white">easy</h2>
-        </a>
+          <!-- Deep Sea Template -->
+          <div class="template-card group" data-category="dark creative" data-aos="fade-up">
+            <a href="deepsea" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/deepsea.png" alt="Deep Sea Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Deep Sea</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Ocean-inspired dark theme portfolio
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Dark</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Creative</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Dark Hack Template -->
+          <div class="template-card group" data-category="dark minimal" data-aos="fade-up">
+            <a href="dark-hack" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/dark-hack.png" alt="Dark Hack Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Dark Hack</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Dark mode hacker-style portfolio
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Dark</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Terminal</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Ingólfur Template -->
+          <div class="template-card group" data-category="creative professional" data-aos="fade-up">
+            <a href="ingolfur" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/ingolfur.png" alt="Ingólfur Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Ingólfur</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Nordic-inspired elegant design
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Elegant</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Nordic</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Anime Template -->
+          <div class="template-card group" data-category="creative" data-aos="fade-up">
+            <a href="anime" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/anime.png" alt="Anime Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Anime</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Anime-style creative portfolio
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Creative</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Fun</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Easy Template -->
+          <div class="template-card group" data-category="minimal" data-aos="fade-up">
+            <a href="easy" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/easy.png" alt="Easy Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Easy</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Easy to customize starter template
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Simple</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Starter</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Flower Template -->
+          <div class="template-card group" data-category="creative" data-aos="fade-up">
+            <a href="flower" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/flower.png" alt="Flower Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div class="absolute top-4 right-4 bg-gradient-to-r from-pink-400 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    New
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Flower</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Nature-inspired portfolio with animations
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Creative</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Animated</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Aurora Template -->
+          <div class="template-card group" data-category="dark professional" data-aos="fade-up">
+            <a href="aurora" target="_blank" class="block">
+              <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+                <div class="relative overflow-hidden">
+                  <img src="./images/aurora.png" alt="Aurora Template"
+                       class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <div class="absolute top-4 right-4 bg-gradient-to-r from-ossph-blue to-ossph-light text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    New
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold mb-2">Aurora</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    Northern Lights inspired dark theme with 9+ sections
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <div class="flex space-x-2">
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Dark</span>
+                      <span class="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">Professional</span>
+                    </div>
+                    <span class="text-ossph-blue dark:text-ossph-light group-hover:translate-x-1 transition-transform inline-flex items-center">
+                      View <i class="fas fa-arrow-right ml-1 text-sm"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </main>
 
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg relative overflow-hidden">
+      <!-- Decorative pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-40 h-40 border-8 border-white rounded-full"></div>
+        <div class="absolute bottom-0 right-0 w-60 h-60 border-8 border-white rounded-full"></div>
+      </div>
+
+      <div class="container mx-auto px-6 text-center relative z-10">
+        <h2 class="text-4xl font-bold text-white mb-4">
+          Start Building Your Portfolio Today
+        </h2>
+        <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">
+          Join the OSSPH community. Choose a template, customize it, and launch your professional portfolio in minutes.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://github.com/OSSPhilippines/freefolio"
+             target="_blank"
+             class="bg-white text-ossph-blue px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-xl hover:shadow-2xl">
+            <i class="fab fa-github mr-2"></i>
+            View on GitHub
+          </a>
+          <a href="https://github.com/OSSPhilippines/freefolio/blob/main/CONTRIBUTING.md"
+             target="_blank"
+             class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-ossph-blue transition transform hover:scale-105">
+            <i class="fas fa-code-branch mr-2"></i>
+            Contribute a Template
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ossph-dark dark:bg-gray-950 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
+                <i class="fas fa-code text-ossph-light"></i>
+              </div>
+              <h3 class="text-xl font-bold">Freefolio</h3>
+            </div>
+            <p class="text-gray-300">
+              100% free portfolio templates by the Open Source Software Philippines community.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li><a href="https://github.com/OSSPhilippines/freefolio" class="hover:text-ossph-light transition"><i class="fas fa-link text-xs mr-2"></i>GitHub Repository</a></li>
+              <li><a href="https://github.com/OSSPhilippines/freefolio/blob/main/CONTRIBUTING.md" class="hover:text-ossph-light transition"><i class="fas fa-link text-xs mr-2"></i>Contributing Guide</a></li>
+              <li><a href="https://github.com/OSSPhilippines/freefolio/blob/main/LICENSE" class="hover:text-ossph-light transition"><i class="fas fa-link text-xs mr-2"></i>MIT License</a></li>
+              <li><a href="https://ossph.org" class="hover:text-ossph-light transition"><i class="fas fa-link text-xs mr-2"></i>OSSPH Website</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+            <div class="flex space-x-4 mb-4">
+              <a href="https://github.com/OSSPhilippines" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ossph-light hover:text-ossph-dark transition">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a href="https://twitter.com/ossphilippines" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ossph-light hover:text-ossph-dark transition">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+            </div>
+            <p class="text-sm text-gray-400">
+              Join our community and contribute!
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-white/10 mt-8 pt-8 text-center text-gray-400">
+          <p class="flex items-center justify-center">
+            © 2024 OSSPH Freefolio. Made with <span class="text-red-500 mx-2">❤️</span> by the community.
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      // Initialize AOS
       AOS.init({
         once: true,
         delay: 0,
+        duration: 600
       });
-    </script>
-    <script>
-      var theme_toggle = document.getElementById("theme-toggle");
-      theme_toggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-        if (document.body.classList.contains("dark")) {
-          theme_toggle.src = "./images/sun.png";
+
+      // Theme Toggle
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeIcon = document.getElementById('theme-icon');
+
+      // Check for saved theme preference or default to light
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      if (currentTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      }
+
+      themeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+
+        if (document.documentElement.classList.contains('dark')) {
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+          localStorage.setItem('theme', 'dark');
         } else {
-          theme_toggle.src = "./images/moon.png";
+          themeIcon.classList.remove('fa-sun');
+          themeIcon.classList.add('fa-moon');
+          localStorage.setItem('theme', 'light');
         }
       });
+
+      // Update template count
+      const templateCards = document.querySelectorAll('.template-card');
+      document.getElementById('templateCount').textContent = templateCards.length + '+';
     </script>
   </body>
 </html>

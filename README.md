@@ -1,8 +1,14 @@
-# Free Portfolio Website Templates
+# 🎨 Freefolio - Free Portfolio Website Templates
 
-<p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Templates-15+-0060a0?style=for-the-badge" alt="Templates">
+  <img src="https://img.shields.io/badge/Dependencies-0-green?style=for-the-badge" alt="Zero Dependencies">
+  <img src="https://img.shields.io/badge/Price-FREE-brightgreen?style=for-the-badge" alt="Free">
+</p>
+
+<p align="center">
   <a href="https://github.com/OSSPhilippines/freefolio/blob/main/CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" height="20" alt="PRs Welcome"> 
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" height="20" alt="PRs Welcome">
   <a href="https://github.com/OSSPhilippines/freefolio/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square">
   <a href="https://github.com/OSSPhilippines/freefolio/blob/main/CODE_OF_CONDUCT.md">
@@ -12,29 +18,31 @@
   <a href="https://github.com/OSSPhilippines/freefolio/network">
     <img alt="GitHub Forks" src="https://badgen.net/github/forks/OSSPhilippines/freefolio/?style=flat-square">
   <a href="https://commitizen.github.io/cz-cli/">
-    <img alt="GitHub Forks" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
+    <img alt="Commitizen Friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
 </p>
 
-A collection of **100% FREE** to use portfolio website templates.
+<p align="center">
+  <strong>Beautiful, responsive, and completely FREE portfolio templates built by the OSSPH community.</strong><br>
+  No dependencies, no setup required. Just download, customize, and launch! 🚀
+</p>
 
 ## ⚡ Features
 
-✅ Fast
-
-✅ FREE
-
-✅ Mobile Responsive
-
-✅ SEO Friendly
-
-✅ Compatible with any web server
-
-✅ 0 Dependencies
+| Feature | Description |
+|---------|-------------|
+| 🚀 **Lightning Fast** | Pure HTML/CSS with no framework overhead |
+| 💰 **100% Free** | MIT licensed, free forever |
+| 📱 **Mobile Responsive** | Looks great on all devices |
+| 🔍 **SEO Friendly** | Properly structured with meta tags |
+| 🌐 **Universal Compatibility** | Works on any web server |
+| 📦 **Zero Dependencies** | No npm install, no build process |
+| 🎨 **Easy to Customize** | Simple HTML/CSS structure |
+| 🌙 **Dark Mode Support** | Many templates include dark themes |
 
 ## GitAds Sponsored
 [![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=ossphilippines/freefolio@github)](https://gitads.dev/v1/ad-track?source=ossphilippines/freefolio@github)
 
-## 🎨 Templates
+## 🎨 Available Templates (15+)
 
 <h3><a href="https://freefolio.web.app/hacker" target="_blank">Hacker</a></h3>
 <img src="./images/hacker.png" alt="hacker-screenshot"/>
@@ -69,11 +77,34 @@ A collection of **100% FREE** to use portfolio website templates.
 <h3><a href="https://freefolio.web.app/anime" target="_blank">Anime</a></h3>
 <img src="./images/anime.png" alt="anime"/>
 
-<h3><a href="https://freefolio.web.app/easy" target="_blank">easy</a></h3>
+<h3><a href="https://freefolio.web.app/easy" target="_blank">Easy</a></h3>
 <img src="./images/easy.png" alt="easy-screenshot"/>
 
-<h3><a href="https://freefolio.web.app/classic" target="_blank">classic</a></h3>
+<h3><a href="https://freefolio.web.app/classic" target="_blank">Classic</a></h3>
 <img src="./images/classic.png" alt="classic-screenshot"/>
+
+<h3><a href="https://freefolio.web.app/flower" target="_blank">🌸 Flower (New)</a></h3>
+<img src="./images/flower.png" alt="flower-screenshot"/>
+
+<h3><a href="https://freefolio.web.app/aurora" target="_blank">🌌 Aurora (New)</a></h3>
+<img src="./images/aurora.png" alt="aurora-screenshot"/>
+
+## 🚀 Quick Start
+
+1. **Browse** the templates at [freefolio.web.app](https://freefolio.web.app)
+2. **Choose** a template that fits your style
+3. **Download** the template folder
+4. **Customize** the HTML with your information
+5. **Deploy** to any web hosting service
+
+That's it! No npm install, no build process, just pure HTML/CSS goodness.
+
+## 🎯 Template Categories
+
+- **Minimal**: Clean, simple designs focused on content
+- **Dark Theme**: Modern dark-mode templates
+- **Creative**: Unique, artistic designs with animations
+- **Professional**: Corporate-ready, formal layouts
 
 ## 😤 I own the content in your templates
 
@@ -81,7 +112,17 @@ If any of the content from our collection is owned by you or your organization a
 
 ## 🎯 Contributing
 
-Please read the project's [contributing guide](./CONTRIBUTING.md) for the process for submitting pull requests to us.
+We welcome contributions! Whether it's a new template, bug fix, or improvement to existing templates.
+
+Please read the project's [contributing guide](./CONTRIBUTING.md) for the process for submitting pull requests.
+
+### How to Contribute a Template
+
+1. Fork the repository
+2. Create a new folder for your template
+3. Add your `index.html` and any assets
+4. Follow our template guidelines
+5. Submit a pull request
 
 ## 📋 Code of Conduct
 
@@ -91,10 +132,32 @@ This project and everyone participating in it are governed by the [Contributor C
 
 Freefolio is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤔 I am not a web developer, how do I setup my portfolio website?
+## 💻 Development
 
-Need help with setting up your portfolio website?
+For contributors who want to use the development tools:
 
-Contact us at https://ossph.org
+```bash
+# Install development dependencies
+npm install
+
+# Run TailwindCSS in watch mode (for main gallery)
+yarn dlx tailwindcss -i global.css -o index.css --watch
+
+# Use Commitizen for commits
+npx cz
+```
+
+## 🤔 Need Help?
+
+- **Setup Help**: Not a developer? Contact us at [ossph.org](https://ossph.org)
+- **Issues**: Report bugs or request features in [GitHub Issues](https://github.com/OSSPhilippines/freefolio/issues)
+- **Community**: Join the OSSPH community for support and discussions
+
+## 🌟 Support the Project
+
+- ⭐ Star this repository
+- 🔄 Share with others who need portfolio templates
+- 🤝 Contribute a template
+- 💬 Spread the word about OSSPH
 
 <!-- GitAds-Verify: I945ALUM1XCZIG1KF2D1TFPEUZQCAYWL -->
