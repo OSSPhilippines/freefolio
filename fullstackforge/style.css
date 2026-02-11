@@ -166,13 +166,14 @@ a {
 }
 
 main {
-  padding: 3.5rem 0 4rem;
+  padding: 0 0 4rem;
 }
 
 .hero {
-  padding: 1rem 0 3.5rem;
+  padding: 0 0 3.2rem;
   position: relative;
   overflow: hidden;
+  background: #e6faed;
 }
 
 .hero::before {
@@ -415,8 +416,9 @@ main {
 
 .section {
   margin-top: 4.5rem;
-  scroll-margin-top: 110px;
+  scroll-margin-top: 100px;
 }
+
 
 .section.alt {
   background: rgba(1, 185, 83, 0.06);
