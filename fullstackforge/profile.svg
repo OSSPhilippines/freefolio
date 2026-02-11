@@ -1,0 +1,17 @@
+<svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#01b953" />
+      <stop offset="100%" stop-color="#0b0f0e" />
+    </linearGradient>
+  </defs>
+  <rect width="420" height="420" rx="36" fill="#f2fbf6" />
+  <circle cx="210" cy="150" r="86" fill="url(#grad)" opacity="0.85" />
+  <rect x="90" y="230" width="240" height="150" rx="70" fill="url(#grad)" opacity="0.85" />
+  <circle cx="180" cy="145" r="18" fill="#f2fbf6" />
+  <circle cx="240" cy="145" r="18" fill="#f2fbf6" />
+  <path d="M170 190 Q210 220 250 190" stroke="#f2fbf6" stroke-width="12" stroke-linecap="round" fill="none" />
+  <text x="210" y="360" font-family="Space Grotesk, sans-serif" font-size="20" text-anchor="middle" fill="#0b0f0e">
+    Dummy Profile
+  </text>
+</svg>
