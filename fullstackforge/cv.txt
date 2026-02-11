@@ -1,0 +1,19 @@
+Jan Michael Sibug
+Full Stack Web Developer
+
+Email: hello@fullstackforge.dev
+Phone: +1 (234) 567-890
+
+Summary:
+Full stack engineer focused on building scalable, accessible, and high-impact web products.
+
+Core Skills:
+HTML, CSS, JavaScript, TypeScript, React, Node.js, Express, PostgreSQL, MongoDB
+
+Experience:
+Senior Full Stack Developer — ForgeLabs (2022 - Present)
+Full Stack Developer — BrightWorks Studio (2019 - 2022)
+Frontend Engineer — Launchpad Digital (2017 - 2019)
+
+Education:
+B.S. in Computer Science — University of Technology (2017)
