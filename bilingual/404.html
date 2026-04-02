@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Jane Smith</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.min.css">
+  <style>
+    body { overflow: hidden; height: 100vh; }
+    .e404 {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; text-align: center; flex: 1;
+    }
+    .e404-num {
+      font-family: var(--font-mono); font-size: clamp(96px, 20vw, 192px);
+      font-weight: 700; line-height: 192px; color: var(--text);
+      position: relative; cursor: default; user-select: none;
+    }
+    .e404-num span {
+      display: inline-block; transition: transform 0.3s ease;
+    }
+    .e404-num span:hover {
+      transform: rotate(-12deg) scale(1.1);
+      color: var(--accent);
+    }
+    .e404-sub {
+      font-family: var(--font-sans); font-size: 20px;
+      color: var(--text-dim); margin: 24px 0 24px;
+      line-height: 24px;
+    }
+    .e404-link {
+      font-family: var(--font-sans); font-size: 18px;
+      color: var(--accent); text-decoration: underline;
+      text-underline-offset: 4px;
+      line-height: 24px;
+      margin-top: 24px;
+      display: inline-block;
+    }
+    .pixel-grid {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(0,0,0,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,.03) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .e404 { position: relative; z-index: 1; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav"><div class="nav-inner">
+    <div class="nav-left">
+      <div class="nav-links">
+        <a href="/index.html">Projects</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+    <button class="nav-burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+  </div></nav>
+
+  <div class="nav-mobile" aria-hidden="true"></div>
+
+  <main class="main main--about">
+    <div class="e404">
+      <div class="e404-num"><span>4</span><span>0</span><span>4</span></div>
+      <p class="e404-sub">Nothing here. But you look great.</p>
+      <a class="e404-link" href="/index.html">&larr; Back to projects</a>
+    </div>
+  </main>
+
+  <div class="pixel-grid"></div>
+
+  <script src="/script.min.js"></script>
+</body>
+</html>

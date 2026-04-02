@@ -98,6 +98,9 @@
 <h3><a href="https://freefolio.web.app/aurora" target="_blank">🌌 Aurora (New)</a></h3>
 <img src="./images/aurora.png" alt="aurora-screenshot"/>
 
+<h3><a href="https://freefolio.web.app/bilingual" target="_blank">🌐 Bilingual (New)</a></h3>
+<img src="./images/bilingual.png" alt="bilingual-screenshot"/>
+
 ## 🚀 Quick Start
 
 1. **Browse** the templates at [freefolio.web.app](https://freefolio.web.app)

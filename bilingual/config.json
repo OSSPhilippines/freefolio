@@ -1,0 +1,16 @@
+{
+  "name": "Jane Smith",
+  "name_ru": "Jane Smith",
+  "job": "Product Designer",
+  "job_ru": "Продуктовый дизайнер",
+  "domain": "example.com",
+  "url": "https://example.com",
+  "email": "hello@example.com",
+  "telegram": "janesmith",
+  "instagram": "janesmith",
+  "linkedin": "janesmith",
+  "goatcounter": "YOURSITE",
+  "location": "Working remotely",
+  "location_ru": "Работаю удалённо",
+  "accent_color": "#F8401C"
+}
