@@ -53,6 +53,12 @@
 
 ## 🎨 Available Templates (15+)
 
+<h3><a href="./starry-museum/">Starry Museum</a></h3>
+<img src="./images/starry-museum.png" alt="Starry Museum: interactive oak-framed portfolio"/>
+
+An anonymous, static art portfolio with live framed exhibits. [Live preview](https://skyjjgw.github.io/starry-museum-portfolio/) · [Source and customization guide](https://github.com/skyjjgw/starry-museum-portfolio)
+
+
 <h3><a href="https://freefolio.web.app/hacker" target="_blank">Hacker</a></h3>
 <img src="./images/hacker.png" alt="hacker-screenshot"/>
 

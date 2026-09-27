@@ -1,0 +1,49 @@
+/* Live webpages occupy the projected openings of the original Three.js frames. */
+.museum-edition{background:#e7e3da;color:#41494b}
+.museum-edition .story-atmosphere{background:linear-gradient(105deg,#dedbd2,#f2eee6 46%,#d9d5ca)}
+.museum-edition .story-world::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-linear-gradient(90deg,#86776512 0 1px,transparent 1px 31%)}
+.museum-edition .story-world #story-canvas{z-index:4;pointer-events:none}
+.museum-edition .portal-preview-layer{position:absolute;inset:0;z-index:3;pointer-events:none}
+.museum-edition .portal-preview{position:absolute;left:0;top:0;width:760px;height:960px;padding:0;border:0;background:#f6f3eb;color:#574f42;transform-origin:0 0;box-shadow:none;overflow:hidden;pointer-events:auto;cursor:auto;backface-visibility:hidden}
+.museum-edition .portal-preview-paper{display:block;width:100%;height:100%;background:#f6f3eb}
+.museum-edition .portal-preview iframe{display:block;width:100%;height:100%;border:0;background:#f6f3eb;pointer-events:auto}
+.museum-edition .portal-preview-caption{pointer-events:none;position:absolute;left:0;right:0;bottom:0;z-index:2;padding:20px 28px;background:linear-gradient(transparent,#263d44c7);color:white;text-align:left;font:18px/1.5 Wenkai,serif;letter-spacing:.05em}
+.museum-edition .story-frame{min-height:120svh;max-width:1160px;margin:auto}
+.museum-edition .story-frame>.frame-surface{position:relative;width:min(350px,31%);min-height:76svh;padding:140px 22px 60px 0;margin:0;background:transparent;border:0;box-shadow:none;pointer-events:auto}
+.museum-edition .story-frame>.frame-surface::before{inset:30px -50px;background:radial-gradient(ellipse at 18% 60%,#eeeae5e8,#eeeae5a3 50%,transparent 80%)}
+.museum-edition .story-frame:nth-child(even)>.frame-surface{margin-left:auto;max-width:430px;padding-right:0;padding-left:20px}
+.museum-edition .frame-surface h1,.museum-edition .world-chapter-title{font-family:Wenkai,serif;color:#41474a;line-height:1.3}
+.museum-edition .frame-paragraph{color:#626764}
+.museum-edition .frame-note,.museum-edition .frame-eyebrow{color:#967b5e}
+.museum-edition .frame-5 .final-memory{background:#f5f1e8;border:1px solid #aa9375}
+.museum-edition .world-end-links{padding:45px 0 80px;justify-content:center}
+.museum-edition:not(.story-webgl) .portal-preview-layer{display:none}
+@media(max-width:760px){.museum-edition .story-frame{min-height:110svh}.museum-edition .story-frame>.frame-surface,.museum-edition .story-frame:nth-child(even)>.frame-surface{width:100%;min-height:0;padding:88px 16px 15px;margin:0;background:#f0ece8dc;border-radius:0 0 20px 20px}.museum-edition .frame-surface h1,.museum-edition .world-chapter-title{font-size:29px;margin-bottom:9px}.museum-edition .frame-eyebrow{margin-bottom:8px}.museum-edition .frame-paragraph{font-size:11px;line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.museum-edition .frame-note{display:none}.museum-edition .story-widget{margin-top:7px}.museum-edition .range-widget label{margin-bottom:2px}}
+@media(prefers-reduced-motion:reduce){.museum-edition .portal-preview{transition:none}.museum-edition .story-frame{min-height:75svh}}
+
+/* Only actual text and controls intercept input above the live paintings. */
+.museum-edition.journey-integrated .story-runway,
+.museum-edition.journey-integrated .story-stage,
+.museum-edition.journey-integrated .story-frame,
+.museum-edition.journey-integrated .frame-surface{pointer-events:none!important}
+.museum-edition .frame-surface :is(button,a,input,textarea,select,label){pointer-events:auto}
+.museum-edition .world-end-links,.museum-edition .footer,.museum-edition .portal-fallback-link{pointer-events:auto}
+.museum-edition.story-webgl .portal-fallback-link{display:none}
+.museum-edition .portal-fallback-link{display:inline-block;margin:20px 0;color:#69543f;text-decoration:underline}
+
+/* Expand the live painting without reparenting or reloading its iframe. */
+body.museum-edition.portal-fullscreen{overflow:hidden}
+.museum-edition.portal-fullscreen .story-world{position:fixed!important;inset:0!important;z-index:10000!important;opacity:1!important;transform:none!important;pointer-events:auto!important}
+.museum-edition.portal-fullscreen .story-world::after,
+.museum-edition.portal-fullscreen #story-canvas{display:none!important}
+.museum-edition.portal-fullscreen .portal-preview-layer{display:block!important;position:fixed;inset:0;z-index:1;opacity:1!important;transform:none!important}
+.museum-edition.portal-fullscreen .portal-preview:not(.is-frame-fullscreen){display:none!important}
+.museum-edition.portal-fullscreen .portal-preview.is-frame-fullscreen{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;transform:none!important;opacity:1!important;visibility:visible!important;z-index:1!important;display:flex!important;flex-direction:column;box-sizing:border-box;padding:10px;background:#ad854c url('assets/starry-gallery/wood/oak-veneer.webp') center/cover;box-shadow:inset 0 0 0 2px #e4c284;backface-visibility:visible}
+.museum-edition .is-frame-fullscreen .portal-preview-paper{flex:1;min-height:0;height:auto;overflow:hidden;box-shadow:0 0 0 1px #e5c383}
+.museum-edition .is-frame-fullscreen iframe{height:100%;width:100%;background:#e7e2ce}
+.museum-edition .is-frame-fullscreen .portal-preview-caption{display:none}
+.portal-fullscreen-bar{display:flex;flex-shrink:0;align-items:center;justify-content:space-between;gap:20px;min-height:48px;padding:0 14px;background:#253f38;color:#f4e6c3;font:14px/1.5 system-ui,sans-serif}
+.portal-fullscreen-bar button{font:inherit;color:#f4e6c3;background:transparent;border:1px solid #c8ba9066;border-radius:5px;padding:6px 13px;cursor:pointer}
+.portal-fullscreen-bar button:focus-visible{outline:2px solid #f5d28a;outline-offset:3px}
+.museum-edition .story-directions [data-frame-fullscreen]{border:1px solid #dcc89577;border-radius:5px;padding:8px 12px;color:#f1e4bd}
+@media(max-width:600px){.museum-edition .story-directions [data-frame-fullscreen]{font-size:10px;padding:7px}.museum-edition.portal-fullscreen .portal-preview.is-frame-fullscreen{padding:5px}.portal-fullscreen-bar{font-size:12px;min-height:44px}}
